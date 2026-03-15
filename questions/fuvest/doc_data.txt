@@ -1,0 +1,42 @@
+InfoBegin
+InfoKey: Creator
+InfoValue: PDFium
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20260310152901
+InfoBegin
+InfoKey: Producer
+InfoValue: PDFium
+PdfID0: 655aa7e66e97526f009bdc23b368560f
+PdfID1: 655aa7e66e97526f009bdc23b368560f
+NumberOfPages: 6
+PageMediaBegin
+PageMediaNumber: 1
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.2 841.92
+PageMediaDimensions: 595.2 841.92
+PageMediaBegin
+PageMediaNumber: 2
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.32 841.92
+PageMediaDimensions: 595.32 841.92
+PageMediaBegin
+PageMediaNumber: 3
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.32 841.92
+PageMediaDimensions: 595.32 841.92
+PageMediaBegin
+PageMediaNumber: 4
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.32 841.92
+PageMediaDimensions: 595.32 841.92
+PageMediaBegin
+PageMediaNumber: 5
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.32 841.92
+PageMediaDimensions: 595.32 841.92
+PageMediaBegin
+PageMediaNumber: 6
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.32 841.92
+PageMediaDimensions: 595.32 841.92
