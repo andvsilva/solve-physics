@@ -45,19 +45,228 @@
 \titleformat*{\section}{\bfseries\large}
 \titleformat*{\subsection}{\bfseries\normalsize}
 
-\title{ \textbf{\large Teoria fundamental para compreens\~ao dos fen\^omenos f\'isicos.} }
+\title{}
 \author{Andr\'e V. Silva}
 \date{\today}
 
+%% color definition
+\definecolor{roxofigura}{RGB}{185,58,230}
+\definecolor{azulclaro}{RGB}{100,180,255}
+
 \begin{document}
+
+\includepdf[pages=-]{pg_0004.pdf}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{stirling_cycle.png}
+\end{figure}
 
 \maketitle
 
-$\rightarrow$ Teoria fundamental para compreens\~ao dos fen\^omenos f\'isicos \cite{feynman1964feynman}.
+\section*{Teoria}
 
+O \colorbox{yellow!50}{motor de Stirling} foi proposto por Robert Stirling em 1816 e é 
+um motor térmico que opera entre \colorbox{yellow!50}{duas fontes de temperatura}: uma \colorbox{red!20}{fonte quente} e 
+uma \colorbox{blue!25}{fonte fria}. O funcionamento ideal desse motor pode ser descrito por 
+um \colorbox{yellow!50}{ciclo termodinâmico composto} por \colorbox{yellow!50}{quatro transformações}.
+
+\subsection*{Etapas do ciclo de Stirling}
+
+O ciclo ideal de Stirling possui quatro processos:
+
+\begin{itemize}
+
+\item \colorbox{roxofigura!50}{\textbf{Aquecimento isovolumétrico (isocórico)}}
+
+O volume permanece constante enquanto a temperatura do gás aumenta. Como consequência, a pressão também aumenta.
+
+\[
+V = \text{constante}
+\]
+
+Como não há variação de volume, o trabalho realizado pelo gás é nulo:
+
+\[
+W = 0
+\]
+
+\item \colorbox{blue!40}{\textbf{Expansão isotérmica}}
+
+Nesse processo a temperatura permanece constante enquanto o volume do gás aumenta. O gás recebe calor da fonte quente.
+
+Para um gás ideal:
+
+\[
+\boxed{
+PV = nRT
+}
+\]
+
+O trabalho realizado pelo gás em uma transformação isotérmica é dado por
+
+\[
+\boxed{
+W = nRT \ln\left(\frac{V_f}{V_i}\right)
+}
+\]
+
+\item \colorbox{red!40}{\textbf{Resfriamento Isovolumétrico}}
+
+O volume permanece constante, porém a temperatura diminui. Como consequência, ocorre diminuição da pressão.
+
+\item \colorbox{azulclaro!35}{\textbf{Compressão isotérmica}}
+
+Nesse processo o volume diminui mantendo a temperatura constante. O gás cede calor à fonte fria.
+
+\end{itemize}
+
+\subsection*{Interpretação do $P \times V$}
+
+No diagrama termodinâmico:
+
+\begin{itemize}
+\item eixo vertical representa a pressão
+\item eixo horizontal representa o volume
+\end{itemize}
+
+Os processos do ciclo são:
+
+\begin{center}
+\begin{tabular}{c c}
+Processo & Tipo de transformação \\
+\hline
+\colorbox{roxofigura!50}{A $\rightarrow$ B} & \colorbox{roxofigura!50}{aquecimento isovolumétrico} \\
+\colorbox{blue!40}{B $\rightarrow$ C} & \colorbox{blue!40}{expansão isotérmica} \\
+\colorbox{red!40}{C $\rightarrow$ D} & \colorbox{red!40}{resfriamento isovolumétrico} \\
+\colorbox{azulclaro!35}{D $\rightarrow$ A} & \colorbox{azulclaro!35}{compressão isotérmica} \\
+\end{tabular}
+\end{center}
+
+\section*{Resolução}
+
+\subsection*{(a) Processo que descreve a compressão isotérmica}
+
+Compressão isotérmica significa que:
+
+\begin{itemize}
+\item a temperatura permanece constante
+\item o volume do gás diminui
+\end{itemize}
+
+Observando o diagrama $P \times V$, o processo em que o volume diminui mantendo a forma 
+característica de uma curva isotérmica é o processo:
+
+\[
+D \rightarrow A
+\]
+
+Portanto, o processo que representa a \colorbox{yellow}{compressão isotérmica do ciclo de Stirling} é
+
+\[
+\boxed{D \rightarrow A}
+\]
+
+\subsection*{(b) Processo em que o sistema recebe calor da fonte quente}
+
+Nos motores térmicos, o \colorbox{yellow}{calor da fonte quente é recebido durante a expansão isotérmica}.
+
+No diagrama apresentado, a expansão isotérmica ocorre no trecho em que o volume aumenta mantendo a temperatura constante.
+
+Esse processo corresponde a:
+
+\[
+B \rightarrow C
+\]
+
+Portanto, o sistema recebe calor da fonte quente no processo
+
+\[
+\boxed{B \rightarrow C}
+\]
+
+\subsection*{(c) Energia solar média transferida ao coletor em 1 hora}
+
+A eficiência do sistema é dada por:
+
+\[
+\eta = \frac{E_{\text{saída}}}{E_{\text{entrada}}}
+\]
+
+\subsubsection*{Dados do problema}
+
+Eficiência:
+
+\[
+\eta = 30\% = 0.30
+\]
+
+Potência elétrica gerada:
+
+\[
+P = 15\,kW = 15000\,W
+\]
+
+Tempo de funcionamento:
+
+\[
+t = 1\,h = 3600\,s
+\]
+
+\subsubsection*{Energia elétrica produzida}
+
+\[
+E_{\text{elétrica}} = P \cdot t
+\]
+
+\[
+E_{\text{elétrica}} = 15000 \times 3600
+\]
+
+\[
+E_{\text{elétrica}} = 5.4 \times 10^{7}\,J
+\]
+
+\subsubsection*{Energia solar recebida}
+
+Usando a definição de eficiência:
+
+\[
+E_{\text{entrada}} = \frac{E_{\text{saída}}}{\eta}
+\]
+
+\[
+E_{\text{solar}} =
+\frac{5.4 \times 10^{7}}{0.30}
+\]
+
+\[
+E_{\text{solar}} = 1.8 \times 10^{8}\,J
+\]
+
+\subsubsection*{Resultado}
+
+A energia solar média transferida ao coletor durante 1 hora é
+
+\[
+\boxed{E = 1.8 \times 10^{8}\,J}
+\]
+
+\section*{Resumo do ciclo}
+
+\begin{center}
+\begin{tabular}{c c c}
+Processo & Tipo & Característica energética \\
+\hline
+A $\rightarrow$ B & Isovolumétrico & aquecimento do gás \\
+B $\rightarrow$ C & Isotérmico & recebe calor da fonte quente \\
+C $\rightarrow$ D & Isovolumétrico & resfriamento do gás \\
+D $\rightarrow$ A & Isotérmico & rejeita calor para a fonte fria \\
+\end{tabular}
+\end{center}
 
 %%%%%%%% Bibliography 
 % Os comandos para incluir as referências bibliográficas
-\printingbibliography
+%\printingbibliography
 
 \end{document}
