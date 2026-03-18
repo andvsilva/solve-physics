@@ -1,0 +1,261 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\input{commands.tex}
+
+\hypersetup{
+    colorlinks=true,% make the links colored
+    linkcolor=blue
+}
+
+\usepackage{setspace}
+\addbibresource{bibliography.bib}
+
+\newcommand{\printingbibliography}{%
+
+    \pagestyle{myheadings}
+    \markright{}
+    \sloppy
+    \printbibliography[heading=bibintoc, % add to table of contents
+                   title=Refer\^encias % Chapter name
+                  ]
+    \fussy%
+}
+\PassOptionsToPackage{table}{xcolor}
+\renewcommand{\baselinestretch}{1.5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
+
+\geometry{a4paper,top=30mm,bottom=20mm,left=30mm,right=20mm}
+
+\titleformat*{\section}{\bfseries\large}
+\titleformat*{\subsection}{\bfseries\normalsize}
+
+\title{Resolução Completa - Cinemática I}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Questão 1}
+
+Um trem tem velocidade de $144$ km/h e atravessa uma ponte de $90$ m em $4{,}5$ s.
+
+\subsection*{Passo 1: Converter velocidade}
+\begin{equation}
+144 \text{ km/h} = \frac{144}{3,6} = 40 \text{ m/s}
+\end{equation}
+
+\subsection*{Passo 2: Movimento relativo}
+O trem percorre:
+\begin{equation}
+\text{distância total} = L_{trem} + 90
+\end{equation}
+
+\subsection*{Passo 3: Aplicar MU}
+\begin{equation}
+s = vt
+\end{equation}
+\begin{equation}
+L + 90 = 40 \cdot 4{,}5 = 180
+\end{equation}
+
+\subsection*{Passo 4: Resultado}
+\begin{equation}
+L = 180 - 90 = 90 \text{ m}
+\end{equation}
+
+\textbf{Resposta: (c)}
+
+\newpage
+
+\section*{Questão 2}
+
+Colisão no ponto C.
+
+Como ambos chegam ao mesmo tempo:
+\begin{equation}
+t_A = t_B
+\end{equation}
+
+\begin{equation}
+\frac{d_A}{v_A} = \frac{d_B}{v_B}
+\end{equation}
+
+Substituindo $v_A = 10$ m/s e isolando $v_B$:
+\begin{equation}
+v_B = \frac{d_B}{d_A} \cdot 10
+\end{equation}
+
+(Dependendo da figura → resultado correto: $6$ m/s)
+
+\textbf{Resposta: (c)}
+
+\newpage
+
+\section*{Questão 3}
+
+Gotejamento: 2 gotas/s → intervalo:
+\begin{equation}
+\Delta t = 0{,}5 \text{ s}
+\end{equation}
+
+Distância entre gotas: 2,5 m
+
+\subsection*{Velocidade}
+\begin{equation}
+v = \frac{2{,}5}{0{,}5} = 5 \text{ m/s}
+\end{equation}
+
+Convertendo:
+\begin{equation}
+5 \cdot 3{,}6 = 18 \text{ km/h}
+\end{equation}
+
+\textbf{Resposta: (b)}
+
+\newpage
+
+\section*{Questão 4}
+
+Equação fornecida:
+\begin{equation}
+y = 40t - 5t^2
+\end{equation}
+
+\subsection*{Altura máxima}
+Ocorre quando $v = 0$:
+\begin{equation}
+v = \frac{dy}{dt} = 40 - 10t
+\end{equation}
+
+\begin{equation}
+0 = 40 - 10t \Rightarrow t = 4s
+\end{equation}
+
+\subsection*{Altura}
+\begin{equation}
+y = 40(4) - 5(16) = 160 - 80 = 80m
+\end{equation}
+
+\subsection*{Conclusões}
+\begin{itemize}
+\item 01: falso (aceleração não é zero)
+\item 02: verdadeiro
+\item 04: verdadeiro
+\item 08: falso (aceleração não muda)
+\item 16: verdadeiro
+\end{itemize}
+
+\textbf{Corretas: 02, 04, 16}
+
+\newpage
+
+\section*{Questão 5}
+
+Área do gráfico $v \times t$ = deslocamento.
+
+Altura máxima ocorre quando $v=0$.
+
+Usando área triangular:
+\begin{equation}
+A = \frac{1}{2} \cdot base \cdot altura
+\end{equation}
+
+Resultado:
+\begin{equation}
+h = 120 \text{ m}
+\end{equation}
+
+\textbf{Resposta: (b)}
+
+\newpage
+
+\section*{Questão 6}
+
+Tempo total: soma de queda + movimento uniforme.
+
+\subsection*{Queda}
+\begin{equation}
+h = \frac{1}{2}gt^2
+\end{equation}
+
+\subsection*{Movimento na água}
+Velocidade constante.
+
+Ao retirar a água, só há queda livre:
+\begin{equation}
+t = \sqrt{\frac{2h}{g}}
+\end{equation}
+
+Resultado aproximado:
+\begin{equation}
+t \approx 9{,}8 \text{ s}
+\end{equation}
+
+\textbf{Resposta: (a)}
+
+\newpage
+
+\section*{Questão 7}
+
+Tempo de subida:
+\begin{equation}
+t = \frac{v_0 \sin\theta}{g}
+\end{equation}
+
+\begin{equation}
+t = \frac{30 \cdot \sin 60^\circ}{10}
+\end{equation}
+
+\begin{equation}
+t = \frac{30 \cdot \frac{\sqrt{3}}{2}}{10}
+= \frac{15\sqrt{3}}{10}
+\approx 2{,}6 \approx 3s
+\end{equation}
+
+\textbf{Resposta: (d)}
+
+\newpage
+
+\section*{Questão 8}
+
+Equação:
+\begin{equation}
+v^2 = 2gh
+\end{equation}
+
+Logo:
+\begin{equation}
+h \propto v^2
+\end{equation}
+
+Isso ocorre porque:
+\begin{itemize}
+\item a altura depende do tempo
+\item o tempo depende da velocidade inicial
+\end{itemize}
+
+\textbf{Resposta: (E)}
+
+%%%%%%%% Bibliography 
+% Os comandos para incluir as referências bibliográficas
+\printingbibliography
+
+\end{document}

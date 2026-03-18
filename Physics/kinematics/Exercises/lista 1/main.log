@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.22)  18 MAR 2026 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.22)  18 MAR 2026 16:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1513,100 +1513,76 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 \c@lstlisting=\count521
-<pg_0006.pdf, id=43, 597.55246pt x 845.07718pt>
-File: pg_0006.pdf Graphic file (type pdf)
-<use pg_0006.pdf>
-Package pdftex.def Info: pg_0006.pdf  used on input line 53.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<pg_0006.pdf, id=45, page=1, 597.55246pt x 845.07718pt>
-File: pg_0006.pdf Graphic file (type pdf)
-<use pg_0006.pdf, page 1>
-Package pdftex.def Info: pg_0006.pdf , page1 used on input line 53.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: pg_0006.pdf Graphic file (type pdf)
-<use pg_0006.pdf, page 1>
-Package pdftex.def Info: pg_0006.pdf , page1 used on input line 53.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: pg_0006.pdf Graphic file (type pdf)
-<use pg_0006.pdf, page 1>
-Package pdftex.def Info: pg_0006.pdf , page1 used on input line 53.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: pg_0006.pdf Graphic file (type pdf)
-<use pg_0006.pdf, page 1>
-Package pdftex.def Info: pg_0006.pdf , page1 used on input line 53.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-
-
-File: pg_0006.pdf Graphic file (type pdf)
-<use pg_0006.pdf, page 1>
-Package pdftex.def Info: pg_0006.pdf , page1 used on input line 53.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[1
-
-
- <./pg_0006.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-6.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+5.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-6.
+5.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-56.
+55.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-56.
+55.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 56.
+(Font)              <14.4> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 56.
+(Font)              <10> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 56.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+(Font)              <7> on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 62.
+(Font)              <12> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 62.
+(Font)              <8> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 62.
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
+(Font)              <6> on input line 58.
 
 
+[1
 
-[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathsy.enc}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athsy.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+06.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1616,19 +1592,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
-
- []
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 183.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1638,11 +1601,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
-
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1660,12 +1618,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6]
-
-Package caption Warning: Unused \captionsetup[sub] on input line 57.
-See the caption package documentation for explanation.
-
-
+[6{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1674,7 +1627,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7] (./main.aux)
+[7]
+
+LaTeX Warning: Empty bibliography on input line 259.
+
+
+Package caption Warning: Unused \captionsetup[sub] on input line 57.
+See the caption package documentation for explanation.
+
+
+
+[8] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1686,22 +1649,23 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50348 strings out of 473197
- 1138410 string characters out of 5718605
- 2013436 words of memory out of 5000000
- 72808 multiletter control sequences out of 15000+600000
- 609893 words of font info for 83 fonts, out of 8000000 for 9000
+ 50400 strings out of 473197
+ 1139298 string characters out of 5718605
+ 2012456 words of memory out of 5000000
+ 72827 multiletter control sequences out of 15000+600000
+ 610300 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,17n,99p,1867b,1680s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,99p,1867b,1680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (7 pages, 400364 bytes).
+pe1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/l
+msy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (8 pages, 146993 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 8 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

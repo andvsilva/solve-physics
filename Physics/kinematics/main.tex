@@ -1,0 +1,479 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\input{commands.tex}
+
+\hypersetup{
+    colorlinks=true,% make the links colored
+    linkcolor=blue
+}
+
+\usepackage{setspace}
+\addbibresource{bibliography.bib}
+
+\newcommand{\printingbibliography}{%
+
+    \pagestyle{myheadings}
+    \markright{}
+    \sloppy
+    \printbibliography[heading=bibintoc, % add to table of contents
+                   title=Refer\^encias % Chapter name
+                  ]
+    \fussy%
+}
+\PassOptionsToPackage{table}{xcolor}
+\renewcommand{\baselinestretch}{1.5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\thepage}
+
+\geometry{a4paper,top=30mm,bottom=20mm,left=30mm,right=20mm}
+
+\titleformat*{\section}{\bfseries\large}
+\titleformat*{\subsection}{\bfseries\normalsize}
+
+\title{\Large Cinemática}
+\author{Andr\'e V. Silva}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+A Cinemática é a parte da Mecânica Clássica que permite calcularmos a distância percorrida, 
+a velocidade e a aceleração dos corpos.
+
+Na Cinemática estudamos:
+\begin{itemize}
+    \item Movimento Retilíneo Uniforme (MRU);
+    \item Movimento Retilíneo Uniformemente Variado (MRUV);
+    \item Movimento Circular Uniforme (MCU);
+    \item Movimento Circular Uniformemente Variado (MCUV).
+\end{itemize}
+
+Existem dois tipos de Cinemática:
+\begin{itemize}
+    \item \textbf{Cinemática Escalar}: não descreve o movimento em termos de direção e sentido, 
+    apenas o módulo das grandezas.
+    \item \textbf{Cinemática Vetorial}: descreve o movimento em termos de módulo, direção e sentido.
+\end{itemize}
+
+Cinemática e Cinética são termos que possuem significados diferentes. A energia cinética é a 
+forma de energia relacionada ao movimento dos corpos.
+
+Enquanto a Cinemática estuda o movimento dos corpos independentemente da sua causa, a Dinâmica 
+estuda as causas do movimento dos corpos.
+
+\textbf{O que se estuda em Cinemática?}
+
+A Cinemática é o ramo da Mecânica Clássica que estuda o movimento dos corpos em trajetórias retilíneas 
+e trajetórias circulares sem levar em consideração o que os provocou. Ela introduz diversos conceitos 
+estudados na Física, como distância, velocidade e aceleração.
+
+\section{\Large Fórmulas da Cinemática}
+
+\subsection{Movimento Retilíneo Uniforme (MRU)}
+
+No MRU, a velocidade é constante e a aceleração é nula ($a = 0$).
+
+\subsubsection{Velocidade média}
+\[
+v_m = \frac{\Delta s}{\Delta t}
+\]
+Onde:
+\begin{itemize}
+    \item $\Delta s = s - s_0$ é o deslocamento
+    \item $\Delta t = t - t_0$ é o intervalo de tempo
+\end{itemize}
+
+\subsubsection{Função horária da posição}
+\[
+s = s_0 + vt
+\]
+Onde:
+\begin{itemize}
+    \item $s$ é a posição final
+    \item $s_0$ é a posição inicial
+    \item $v$ é a velocidade constante
+\end{itemize}
+
+\subsection{Movimento Retilíneo Uniformemente Variado (MRUV)}
+
+No MRUV, a aceleração é constante.
+
+\subsubsection{Aceleração média}
+\[
+a = \frac{\Delta v}{\Delta t}
+\]
+
+\subsubsection{Função horária da velocidade}
+\[
+v = v_0 + at
+\]
+
+\subsubsection{Função horária da posição}
+\[
+s = s_0 + v_0 t + \frac{1}{2}at^2
+\]
+
+\subsubsection{Equação de Torricelli}
+\[
+v^2 = v_0^2 + 2a\Delta s
+\]
+
+\subsection{Queda Livre}
+
+Movimento vertical sob ação exclusiva da gravidade ($g \approx 9{,}8\,m/s^2$).
+
+\subsubsection{Velocidade}
+\[
+v = v_0 + gt
+\]
+
+\subsubsection{Altura (posição)}
+\[
+h = h_0 + v_0 t + \frac{1}{2}gt^2
+\]
+
+\subsubsection{Equação de Torricelli}
+\[
+v^2 = v_0^2 + 2g\Delta h
+\]
+
+\textbf{Observação:} O sinal de $g$ depende do referencial adotado.
+
+\subsection{Lançamento Vertical}
+
+Movimento vertical com subida e descida.
+
+\subsubsection{Velocidade}
+\[
+v = v_0 - gt
+\]
+
+\subsubsection{Posição}
+\[
+s = s_0 + v_0 t - \frac{1}{2}gt^2
+\]
+
+\subsubsection{Equação de Torricelli}
+\[
+v^2 = v_0^2 - 2g\Delta s
+\]
+
+\textbf{Ponto importante:} No topo da trajetória, $v = 0$.
+
+\subsection{Lançamento Horizontal}
+
+Movimento composto: MRU na horizontal e MRUV na vertical.
+
+\subsubsection{Posição horizontal}
+\[
+x = v_0 t
+\]
+
+\subsubsection{Movimento vertical}
+\[
+y = \frac{1}{2}gt^2
+\]
+
+\subsubsection{Velocidades}
+\[
+v_x = v_0 \quad ; \quad v_y = gt
+\]
+
+\subsection{Lançamento Oblíquo}
+
+Movimento bidimensional com decomposição vetorial.
+
+\subsubsection{Componentes da velocidade inicial}
+\[
+v_{0x} = v_0 \cos\theta \quad ; \quad v_{0y} = v_0 \sin\theta
+\]
+
+\subsubsection{Movimento horizontal}
+\[
+x = v_0 \cos\theta \cdot t
+\]
+
+\subsubsection{Movimento vertical}
+\[
+y = v_0 \sin\theta \cdot t - \frac{1}{2}gt^2
+\]
+
+\subsubsection{Velocidade vertical}
+\[
+v_y = v_0 \sin\theta - gt
+\]
+
+\subsubsection{Tempo de subida}
+\[
+t_s = \frac{v_0 \sin\theta}{g}
+\]
+
+\subsubsection{Altura máxima}
+\[
+h_{max} = \frac{(v_0 \sin\theta)^2}{2g}
+\]
+
+\subsubsection{Tempo total de voo}
+\[
+t = \frac{2 v_0 \sin\theta}{g}
+\]
+
+\subsubsection{Alcance horizontal}
+\[
+A = \frac{v_0^2 \sin(2\theta)}{g}
+\]
+
+\subsubsection{Relação do alcance}
+\[
+A = v_{0x} \cdot t
+\]
+
+\subsection{Movimento Circular Uniforme (MCU)}
+
+Velocidade angular constante.
+
+\subsubsection{Deslocamento angular}
+\[
+\Delta \theta = \theta - \theta_0
+\]
+
+\subsubsection{Velocidade angular}
+\[
+\omega = \frac{\Delta \theta}{\Delta t}
+\]
+
+\subsubsection{Função horária da posição}
+\[
+\theta = \theta_0 + \omega t
+\]
+
+\subsubsection{Relação entre grandezas lineares e angulares}
+\[
+v = \omega r
+\]
+
+\subsubsection{Aceleração centrípeta}
+\[
+a_c = \frac{v^2}{r} = \omega^2 r
+\]
+
+\subsection{Movimento Circular Uniformemente Variado (MCUV)}
+
+Aceleração angular constante.
+
+\subsubsection{Aceleração angular}
+\[
+\alpha = \frac{\Delta \omega}{\Delta t}
+\]
+
+\subsubsection{Função horária da velocidade angular}
+\[
+\omega = \omega_0 + \alpha t
+\]
+
+\subsubsection{Função horária da posição angular}
+\[
+\theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2
+\]
+
+\subsubsection{Equação de Torricelli angular}
+\[
+\omega^2 = \omega_0^2 + 2\alpha \Delta \theta
+\]
+
+\section{Aceleração Centrípeta}
+
+A aceleração centrípeta é a aceleração responsável por manter um corpo em movimento circular, sempre apontando para o centro da trajetória.
+
+\[
+a_{cp} = \frac{v^2}{R} = \omega^2 R
+\]
+
+Onde:
+\begin{itemize}
+    \item $a_{cp}$: aceleração centrípeta [$m/s^2$]
+    \item $v$: velocidade linear [$m/s$]
+    \item $R$: raio da trajetória [$m$]
+    \item $\omega$: velocidade angular [$rad/s$]
+\end{itemize}
+
+\section{Tipos de Cinemática}
+
+A Cinemática é separada em duas áreas:
+
+\begin{itemize}
+    \item \textbf{Cinemática Escalar}: não considera a análise vetorial (módulo, direção e sentido) do movimento.
+    \item \textbf{Cinemática Vetorial}: considera módulo, direção e sentido do movimento.
+\end{itemize}
+
+\section{Tipos de Movimento na Cinemática}
+
+\subsection{Movimento Retilíneo Uniforme (MRU)}
+
+Também chamado de movimento uniforme, ocorre quando o corpo se move com velocidade constante em trajetória retilínea.
+
+\begin{itemize}
+    \item Velocidade constante
+    \item Aceleração nula ($a = 0$)
+\end{itemize}
+
+\subsection{Movimento Retilíneo Uniformemente Variado (MRUV)}
+
+Também chamado de movimento uniformemente variado, ocorre quando há aceleração constante.
+
+\begin{itemize}
+    \item Aceleração constante e diferente de zero
+    \item Velocidade variável
+\end{itemize}
+
+\subsection{Movimento Circular Uniforme (MCU)}
+
+Movimento em trajetória circular com velocidade constante.
+
+\begin{itemize}
+    \item Velocidade escalar constante
+    \item Velocidade angular constante
+\end{itemize}
+
+\subsection{Movimento Circular Uniformemente Variado (MCUV)}
+
+Movimento circular com aceleração angular constante.
+
+\begin{itemize}
+    \item Aceleração angular constante
+    \item Velocidade angular variável
+\end{itemize}
+
+\section{Diferenças entre Cinemática e Cinética}
+
+\begin{itemize}
+    \item \textbf{Cinemática}: estuda o movimento dos corpos sem considerar suas causas.
+    \item \textbf{Cinética}: refere-se à energia cinética, que é a energia associada ao movimento dos corpos.
+\end{itemize}
+
+\section{Cinemática x Dinâmica}
+
+\begin{itemize}
+    \item \textbf{Cinemática}: estuda o movimento (trajetórias, velocidades e acelerações).
+    \item \textbf{Dinâmica}: estuda as causas do movimento (forças, leis de Newton, energia, impulso).
+\end{itemize}
+
+\section{Importância da Cinemática}
+
+A Cinemática é fundamental para o estudo da Física, pois introduz conceitos essenciais para compreender o movimento dos corpos.
+
+Algumas aplicações práticas incluem:
+
+\begin{itemize}
+    \item Lançamento e queda de corpos;
+    \item Lançamento de bolas em esportes;
+    \item Movimento de veículos ao acelerar;
+    \item Movimento em curvas.
+\end{itemize}
+
+\section{Exercícios Resolvidos de Cinemática}
+
+\subsection*{Exercício 1}
+Um carro percorre 100 m em 5 s. Determine a velocidade média.
+
+\[
+\textcolor{blue}{v_m = \frac{\Delta s}{\Delta t} = \frac{100}{5} = 20\ \text{m/s}}
+\]
+
+\subsection*{Exercício 2}
+Um móvel em MRU possui velocidade de 20 m/s e posição inicial de 10 m. Determine a posição após 5 s.
+
+\[
+\textcolor{blue}{s = s_0 + vt = 10 + 20 \cdot 5 = 110\ \text{m}}
+\]
+
+\subsection*{Exercício 3}
+Um objeto parte do repouso e atinge 30 m/s em 10 s. Calcule a aceleração média.
+
+\[
+\textcolor{blue}{a = \frac{\Delta v}{\Delta t} = \frac{30 - 0}{10} = 3\ \text{m/s}^2}
+\]
+
+\subsection*{Exercício 4}
+Um corpo em MRUV possui $v_0 = 5$ m/s e $a = 2$ m/s$^2$. Determine a velocidade após 4 s.
+
+\[
+\textcolor{blue}{v = v_0 + at = 5 + 2 \cdot 4 = 13\ \text{m/s}}
+\]
+
+\subsection*{Exercício 5}
+Um móvel parte do repouso com aceleração constante de 3 m/s$^2$. Determine a posição após 6 s.
+
+\[
+\textcolor{blue}{s = \frac{1}{2}at^2 = \frac{1}{2} \cdot 3 \cdot 6^2 = 54\ \text{m}}
+\]
+
+\subsection*{Exercício 6}
+Um carro a 25 m/s freia com desaceleração de 5 m/s$^2$. Determine a distância até parar.
+
+\[
+\textcolor{blue}{v^2 = v_0^2 + 2a\Delta s}
+\]
+\[
+\textcolor{blue}{0 = 25^2 + 2(-5)\Delta s}
+\]
+\[
+\textcolor{blue}{\Delta s = \frac{625}{10} = 62{,}5\ \text{m}}
+\]
+
+\subsection*{Exercício 7}
+Uma bola é lançada verticalmente para cima com velocidade inicial de 20 m/s. Determine:
+(a) o tempo de subida; (b) a altura máxima.
+
+(a)
+\[
+\textcolor{blue}{t = \frac{v_0}{g} = \frac{20}{10} = 2\ \text{s}}
+\]
+
+(b)
+\[
+\textcolor{blue}{h = \frac{v_0^2}{2g} = \frac{400}{20} = 20\ \text{m}}
+\]
+
+\subsection*{Exercício 8}
+Um projétil é lançado com velocidade inicial de 30 m/s formando um ângulo de $30^\circ$. Determine o alcance.
+
+\[
+\textcolor{blue}{A = \frac{30^2 \sin(60^\circ)}{10} \approx 77{,}94\ \text{m}}
+\]
+
+\subsection*{Exercício 9}
+Um corpo realiza MCU com velocidade de 10 m/s em raio de 5 m. Determine a aceleração centrípeta.
+
+\[
+\textcolor{blue}{a_c = \frac{10^2}{5} = 20\ \text{m/s}^2}
+\]
+
+\subsection*{Exercício 10}
+Um móvel em MCUV possui $\omega_0 = 2$ rad/s e $\alpha = 1$ rad/s$^2$. Determine a velocidade angular após 4 s.
+
+\[
+\textcolor{blue}{\omega = 2 + 1 \cdot 4 = 6\ \text{rad/s}}
+\]
+
+%%%%%%%% Bibliography 
+% Os comandos para incluir as referências bibliográficas
+%\printingbibliography
+
+\end{document}

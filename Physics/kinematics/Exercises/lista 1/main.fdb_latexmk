@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex main"] 1773789819.62791 "main.aux" "main.bbl" "main" 1773789822.31835 0
-  "./bibliography.bib" 1773167112.99488 280 ee48311b216ec8d66a1fe05e2e13e128 ""
-  "./main-blx.bib" 1773789821.69466 343 49edc20051db315eae61ff8c90935a09 ""
+["bibtex main"] 1773863050.42178 "main.aux" "main.bbl" "main" 1773863053.28311 0
+  "./bibliography.bib" 1773862071.30689 280 ee48311b216ec8d66a1fe05e2e13e128 ""
+  "./main-blx.bib" 1773863052.60629 343 49edc20051db315eae61ff8c90935a09 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1711143581 65510 b1f696b0241395385f422f67543c37fd ""
-  "main.aux" 1773789821.68666 496 d23b0d8302a16451d1b705c449003095 "pdflatex"
+  "main.aux" 1773863052.59229 496 b38b515f65824590d46ef0ce22ce092e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773789819.78586 "/home/andvsilva/repo/solve-physics/questions/fuvest/F3-F4/main.tex" "main.pdf" "main" 1773789822.31861 0
+["pdflatex"] 1773863050.58992 "/home/andvsilva/repo/solve-physics/Physics/kinematics/Exercises/lista 1/main.tex" "main.pdf" "main" 1773863053.28343 0
   "/etc/texmf/web2c/texmf.cnf" 1769089137.22928 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/andvsilva/repo/solve-physics/questions/fuvest/F3-F4/main.tex" 1773789814.02594 8669 5b29af86605bc4cd2774e4f6d5e67fd3 ""
+  "/home/andvsilva/repo/solve-physics/Physics/kinematics/Exercises/lista 1/main.tex" 1773863049.60932 4574 a7c8c8e683d3da598203f9c0f604dc4a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm" 1246382020 1228 9be37fdf0dc0e1f4df4af3594876d628 ""
@@ -280,6 +280,7 @@
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr17.tfm" 1254269338 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm" 1254269338 12048 c1068d0f4772be9b0ec447692e1d6d82 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm" 1254269338 12064 a35db870f0b76c338d749c56dc030ef5 ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmro12.tfm" 1254269338 12216 265ff4deab161a560d37046d13363b8c ""
   "/usr/share/texmf/fonts/tfm/public/lm/lmex10.tfm" 1148093231 992 ce925c9346c7613270a79afbee98c070 ""
   "/usr/share/texmf/fonts/tfm/public/lm/lmmi10.tfm" 1148093231 1528 6d36b2385e0ca062a654de6ac59cb34f ""
   "/usr/share/texmf/fonts/tfm/public/lm/lmmi12.tfm" 1148093231 1524 753b192b18f2991794f9d41a8228510b ""
@@ -301,8 +302,10 @@
   "/usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb" 1254269338 30635 833ec815d446ec453a4913fc26d24cbc ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
+  "/usr/share/texmf/fonts/type1/public/lm/lmr17.pfb" 1255129361 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr8.pfb" 1255129361 122174 a7a08406857c9530a0320a2517f60370 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb" 1254269338 27863 09ce3735688ffde955e72da27c95b61a ""
+  "/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb" 1254269338 27802 5c876bb2c4040caaf035d60bd74a86bd ""
   "/usr/share/texmf/tex/latex/lm/lmodern.sty" 1616454256 1608 b00724785a9e9c599e5181bb8729160b ""
   "/usr/share/texmf/tex/latex/lm/omllmm.fd" 1616454256 890 57f5adccd504fb5c98bdf99ed7e7f195 ""
   "/usr/share/texmf/tex/latex/lm/omslmsy.fd" 1616454256 807 3de192f3efa968913bd2f096a7b430d8 ""
@@ -313,14 +316,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1769089162 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1769089299 3345117 62aacbb8383772ece80c5b67cf4f2a16 ""
-  "commands.tex" 1773166746.26072 2656 d363e0b8577d861578fd1474d4cbfc92 ""
-  "main.aux" 1773789821.68666 496 d23b0d8302a16451d1b705c449003095 "pdflatex"
-  "main.bbl" 1773789819.7757 520 47390d0fec917a8062f60a58a9b6d248 "bibtex main"
-  "main.out" 1773789821.38966 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.run.xml" 1773789821.69687 2657 383836486b204712d8a401798f093232 "pdflatex"
-  "main.tex" 1773789814.02594 8669 5b29af86605bc4cd2774e4f6d5e67fd3 ""
-  "pg_0004.pdf" 1773696208.37181 506188 5124dd87f8da2d195f7f17cec9511e28 ""
-  "stirling_cycle.png" 1773696606.74804 311254 718e1ce88ddb7f2874cec69575b34fa0 ""
+  "commands.tex" 1773862071.30693 2656 d363e0b8577d861578fd1474d4cbfc92 ""
+  "main.aux" 1773863052.59229 496 b38b515f65824590d46ef0ce22ce092e "pdflatex"
+  "main.bbl" 1773863050.5853 520 47390d0fec917a8062f60a58a9b6d248 "bibtex main"
+  "main.out" 1773863052.30778 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.run.xml" 1773863052.60861 2657 383836486b204712d8a401798f093232 "pdflatex"
+  "main.tex" 1773863049.60932 4574 a7c8c8e683d3da598203f9c0f604dc4a ""
   (generated)
   "main-blx.bib"
   "main.aux"
