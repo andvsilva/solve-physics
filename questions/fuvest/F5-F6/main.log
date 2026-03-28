@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.22)  18 MAR 2026 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.22)  19 MAR 2026 14:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1616,17 +1616,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 183.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
+LaTeX Warning: Command \' invalid in math mode on input line 205.
 
 
 
@@ -1638,7 +1633,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
@@ -1661,6 +1661,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+
+LaTeX Warning: Command \' invalid in math mode on input line 320.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 322.
+
 
 Package caption Warning: Unused \captionsetup[sub] on input line 57.
 See the caption package documentation for explanation.
@@ -1698,7 +1704,7 @@ pe1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (7 pages, 400364 bytes).
+Output written on main.pdf (7 pages, 401876 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams

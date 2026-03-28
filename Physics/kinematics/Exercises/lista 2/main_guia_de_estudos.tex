@@ -1,0 +1,248 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\geometry{margin=2cm}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Guia de Estudo – Física – 1ª Série EM}
+\lhead{Prof. André Vieira da Silva}
+\rfoot{\thepage}
+
+\title{\textbf{Guia de Estudo – Física – 1ª Série do Ensino Médio}\\Provão Paulista 2025}
+\author{Prof. André Vieira da Silva}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+%==================================================
+\section{Cinemática}
+
+\subsection{Conceitos Fundamentais}
+A cinemática é a parte da Física que estuda os movimentos sem se preocupar com suas causas.  
+Os principais conceitos são:
+
+\begin{itemize}
+    \item \textbf{Referencial:} ponto de vista a partir do qual se observa o movimento.
+    \item \textbf{Posição ($s$):} local onde o corpo se encontra.
+    \item \textbf{Deslocamento ($\Delta s$):} variação da posição: $\Delta s = s - s_0$.
+    \item \textbf{Velocidade média:} $v_m = \dfrac{\Delta s}{\Delta t}$.
+    \item \textbf{Aceleração média:} $a_m = \dfrac{\Delta v}{\Delta t}$.
+\end{itemize}
+
+\subsection{Movimento Uniforme (MU)}
+No MU a velocidade é constante:
+\[
+s = s_0 + vt
+\]
+
+\textbf{Exemplo:} Um carro parte do km 10 e viaja a 90 km/h.  
+Após 2 horas, sua posição será:
+\[
+s = 10 + 90 \times 2 = 190 \text{ km}
+\]
+
+\subsection{Movimento Uniformemente Variado (MUV)}
+A aceleração é constante:
+\[
+v = v_0 + at \qquad \text{e} \qquad s = s_0 + v_0t + \frac{at^2}{2}
+\]
+A equação de Torricelli relaciona $v$, $v_0$, $a$ e $\Delta s$:
+\[
+v^2 = v_0^2 + 2a\Delta s
+\]
+
+\textbf{Exemplo:} Um carro acelera de $10\,m/s$ para $20\,m/s$ em 5 s:
+\[
+a = \frac{20 - 10}{5} = 2\,m/s^2
+\]
+
+\subsection{Exercícios}
+\begin{enumerate}
+\item Um móvel parte do repouso e percorre $100\,m$ em $10\,s$. Determine a aceleração.
+\item Um carro a $72\,km/h$ percorre 150 km. Calcule o tempo gasto.
+\item Um corpo com $v_0 = 5\,m/s$ e $a = 2\,m/s^2$ encontra sua velocidade após 6 s.
+\item Determine o deslocamento de um corpo que parte do repouso e acelera a $3\,m/s^2$ por 4 s.
+\item (Avançado) Um corpo em MUV parte de $v_0 = 10\,m/s$ e chega a repouso após 5 s. Calcule a distância percorrida.
+\end{enumerate}
+
+%==================================================
+\section{Leis de Newton e Forças}
+
+\subsection{Primeira Lei de Newton (Inércia)}
+Um corpo tende a permanecer em repouso ou em movimento retilíneo uniforme se nenhuma força atuar sobre ele.
+
+\subsection{Segunda Lei de Newton}
+A força resultante é o produto da massa pela aceleração:
+\[
+\vec{F}_R = m\vec{a}
+\]
+A unidade de força é o \textit{newton} (N): $1\,N = 1\,kg \cdot m/s^2$
+
+\textbf{Exemplo:} Um corpo de $4\,kg$ sofre aceleração de $3\,m/s^2$:
+\[
+F = 4 \times 3 = 12\,N
+\]
+
+\subsection{Terceira Lei de Newton (Ação e Reação)}
+Se um corpo A exerce uma força sobre B, então B exerce uma força de mesma intensidade e direção, mas em sentido oposto, sobre A.
+
+\subsection{Exercícios}
+\begin{enumerate}
+\item Uma força de $20\,N$ atua sobre um corpo de $4\,kg$. Calcule a aceleração.
+\item Qual é a força necessária para acelerar um corpo de $1.000\,kg$ a $2\,m/s^2$?
+\item Um corpo de $10\,kg$ sofre forças de $40\,N$ para a direita e $10\,N$ para a esquerda. Determine a aceleração.
+\item Um corpo em repouso sofre uma força resultante constante de $5\,N$ por 3 s. Encontre a velocidade final (massa = $2\,kg$).
+\item (Avançado) Um bloco de $5\,kg$ está sobre uma superfície horizontal ($\mu=0{,}2$). Determine a força necessária para mover o bloco com aceleração $2\,m/s^2$.
+\end{enumerate}
+
+%==================================================
+\section{Gravitação Universal}
+
+\subsection{Lei da Gravitação Universal}
+Newton propôs que duas massas se atraem com uma força diretamente proporcional ao produto das massas e inversamente proporcional ao quadrado da distância:
+\[
+F = G \frac{m_1 m_2}{r^2}
+\]
+onde $G = 6{,}67 \times 10^{-11}\,N \cdot m^2/kg^2$.
+
+\textbf{Exemplo:} Calcule a força entre dois corpos de $1\,kg$ a 1 m de distância:
+\[
+F = 6{,}67 \times 10^{-11} \frac{1 \times 1}{1^2} = 6{,}67 \times 10^{-11}\,N
+\]
+
+\subsection{Aceleração da Gravidade}
+A força peso é:
+\[
+P = m g
+\]
+Na Terra, $g \approx 9{,}8\,m/s^2$.
+
+\subsection{Exercícios}
+\begin{enumerate}
+\item Calcule a força gravitacional entre duas massas de $5\,kg$ separadas por $2\,m$.
+\item Um corpo de $80\,kg$ tem peso em $N$ na Terra. Calcule.
+\item Compare o peso de um corpo de $10\,kg$ na Terra ($g=9{,}8$) e na Lua ($g=1{,}6$).
+\item Um satélite orbita a Terra a $r = 7{,}0 \times 10^6\,m$. Calcule a aceleração gravitacional local.
+\item (Avançado) Determine a massa da Terra sabendo que $g=9{,}8\,m/s^2$ e $r=6{,}37 \times 10^6\,m$.
+\end{enumerate}
+
+%==================================================
+\section{Trabalho e Energia}
+
+\subsection{Trabalho de uma força constante}
+\[
+\tau = F \cdot d \cdot \cos\theta
+\]
+
+\textbf{Exemplo:} Um operário aplica força de $50\,N$ horizontalmente por $2\,m$:
+\[
+\tau = 50 \times 2 \times \cos0^\circ = 100\,J
+\]
+
+\subsection{Energia Cinética e Potencial}
+\[
+E_c = \frac{mv^2}{2}, \qquad E_p = mgh
+\]
+
+\subsection{Teorema da Energia Cinética}
+O trabalho total realizado sobre um corpo é igual à variação da sua energia cinética:
+\[
+\tau_R = \Delta E_c
+\]
+
+\subsection{Exercícios}
+\begin{enumerate}
+\item Calcule o trabalho realizado por uma força de $10\,N$ ao deslocar um corpo por $3\,m$.
+\item Um corpo de $2\,kg$ tem $v=3\,m/s$. Determine sua energia cinética.
+\item Um corpo de $5\,kg$ é elevado a $2\,m$. Calcule a energia potencial gravitacional.
+\item Um corpo de $1\,kg$ tem $v_0=0$ e sofre força resultante de $10\,N$ por 2 m. Determine $v$.
+\item (Avançado) Um bloco desliza plano horizontal ($\mu=0{,}2$). Determine o trabalho da força de atrito em 10 m, se $N=50\,N$.
+\end{enumerate}
+
+%==================================================
+\section{Sistemas Conservativos e Não Conservativos}
+
+\subsection{Conservação da Energia Mecânica}
+Em sistemas sem atrito:
+\[
+E_m = E_c + E_p = \text{constante}
+\]
+
+\textbf{Exemplo:} Um corpo cai de $h=10\,m$:
+\[
+E_p = E_c \Rightarrow mgh = \frac{mv^2}{2} \Rightarrow v = \sqrt{2gh} = 14\,m/s
+\]
+
+\subsection{Sistemas Não Conservativos}
+Quando há atrito ou resistência do ar, parte da energia mecânica é transformada em calor.
+
+\subsection{Exercícios}
+\begin{enumerate}
+\item Um corpo cai de $h=5\,m$. Calcule a velocidade ao atingir o solo (sem atrito).
+\item Um corpo é lançado verticalmente com $v_0=20\,m/s$. Determine a altura máxima.
+\item Um corpo desliza com atrito ($\mu=0{,}1$) por 10 m. Calcule a energia dissipada.
+\item (Intermediário) Em um plano inclinado sem atrito, calcule a velocidade após descer $h=3\,m$.
+\item (Avançado) Um pêndulo de $2\,m$ é solto a partir do repouso. Determine a velocidade no ponto mais baixo.
+\end{enumerate}
+
+%==================================================
+\newpage
+\section{Resoluções dos Exercícios}
+
+\subsection{Cinemática}
+\begin{enumerate}
+\item $s = s_0 + v_0t + \frac{at^2}{2} \Rightarrow 100 = 0 + 0 + \frac{a(10)^2}{2} \Rightarrow a = 2\,m/s^2$
+\item $v = \frac{\Delta s}{\Delta t} \Rightarrow 72\,km/h = 20\,m/s \Rightarrow t = \frac{150000}{20} = 7500\,s = 2{,}08\,h$
+\item $v = v_0 + at = 5 + 2 \times 6 = 17\,m/s$
+\item $s = \frac{at^2}{2} = \frac{3(4)^2}{2} = 24\,m$
+\item $v = 0 = 10 + (-a)5 \Rightarrow a=2\,m/s^2$, então $\Delta s = v_0t + \frac{at^2}{2} = 10(5) - \frac{2(5)^2}{2}=25\,m$
+\end{enumerate}
+
+\subsection{Leis de Newton}
+\begin{enumerate}
+\item $a = \frac{F}{m} = \frac{20}{4} = 5\,m/s^2$
+\item $F = ma = 1000 \times 2 = 2000\,N$
+\item $F_R = 40 - 10 = 30\,N \Rightarrow a = 30/10 = 3\,m/s^2$
+\item $F = ma \Rightarrow 5 = 2a \Rightarrow a = 2{,}5\,m/s^2$, $v = v_0 + at = 0 + 2{,}5 \times 3 = 7{,}5\,m/s$
+\item $F_R = ma + F_{at}$, $F_{at} = \mu N = 0{,}2 \times 5 \times 9{,}8 = 9{,}8\,N$, $F = 5 \times 2 + 9{,}8 = 19{,}8\,N$
+\end{enumerate}
+
+\subsection{Gravitação}
+\begin{enumerate}
+\item $F = 6{,}67\times10^{-11} \frac{5\times5}{2^2} = 4{,}17\times10^{-10}\,N$
+\item $P = mg = 80 \times 9{,}8 = 784\,N$
+\item Terra: $98\,N$; Lua: $16\,N$
+\item $g = G\frac{M_T}{r^2}$, substituindo dados conhecidos de $G$ e $M_T$, $g \approx 9{,}8\,m/s^2$
+\item $M_T = \frac{gr^2}{G} = \frac{9{,}8(6{,}37\times10^6)^2}{6{,}67\times10^{-11}} = 5{,}97\times10^{24}\,kg$
+\end{enumerate}
+
+\subsection{Trabalho e Energia}
+\begin{enumerate}
+\item $\tau = 10\times3\times\cos0 = 30\,J$
+\item $E_c = \frac{2(3)^2}{2} = 9\,J$
+\item $E_p = 5\times9{,}8\times2 = 98\,J$
+\item $\tau = Fd = 10\times2 = 20 = \frac{1}{2}m(v^2 - v_0^2)$ $\Rightarrow v = \sqrt{40} = 6{,}32\,m/s$
+\item $W_{at} = -F_{at}d = -\mu N d = -0{,}2\times50\times10 = -100\,J$
+\end{enumerate}
+
+\subsection{Sistemas Conservativos}
+\begin{enumerate}
+\item $v = \sqrt{2gh} = \sqrt{2\times9{,}8\times5} = 9{,}9\,m/s$
+\item $v^2 = v_0^2 - 2gh \Rightarrow 0 = 20^2 - 2(9{,}8)h \Rightarrow h = 20{,}4\,m$
+\item $E_d = \mu N d = 0{,}1\times10m\times9{,}8=9{,}8\,J$
+\item $v = \sqrt{2gh} = \sqrt{2\times9{,}8\times3} = 7{,}7\,m/s$
+\item $v = \sqrt{2gh} = \sqrt{2\times9{,}8\times2} = 6{,}26\,m/s$
+\end{enumerate}
+
+\end{document}
