@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.22)  28 MAR 2026 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.1.22)  28 MAR 2026 17:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2085,41 +2085,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [18]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 755.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2128,6 +2093,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.95871pt
+(hyperref)                removed on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.95871pt
+(hyperref)                removed on input line 773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 773.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2139,28 +2139,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 784.
+(hyperref)                removing `math shift' on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 784.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 784.
+(hyperref)                removed on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 784.
+(hyperref)                removing `math shift' on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 784.
+(hyperref)                removing `math shift' on input line 802.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 784.
+(hyperref)                removing `math shift' on input line 802.
 
 
 
@@ -2174,36 +2174,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `math shift' on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 807.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 807.
+(hyperref)                removed on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `math shift' on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `math shift' on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `math shift' on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `math shift' on input line 825.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `math shift' on input line 825.
 
 
 
@@ -2217,28 +2217,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 838.
+(hyperref)                removing `math shift' on input line 856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 838.
+(hyperref)                removing `\times' on input line 856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 838.
+(hyperref)                removing `superscript' on input line 856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 838.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 838.
+(hyperref)                removed on input line 856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 838.
+(hyperref)                removing `math shift' on input line 856.
 
 
 
@@ -2253,7 +2253,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <plots/grafico_gravidade.pdf, id=434, 704.03879pt x 414.7032pt>
 File: plots/grafico_gravidade.pdf Graphic file (type pdf)
 <use plots/grafico_gravidade.pdf>
-Package pdftex.def Info: plots/grafico_gravidade.pdf  used on input line 913.
+Package pdftex.def Info: plots/grafico_gravidade.pdf  used on input line 931.
 (pdftex.def)             Requested size: 409.71692pt x 241.33798pt.
 
 
@@ -2276,49 +2276,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 960.
+(hyperref)                removing `math shift' on input line 978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 960.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 960.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.95871pt
-(hyperref)                removed on input line 960.
+(hyperref)                removed on input line 978.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 960.
+(hyperref)                removing `superscript' on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.95871pt
+(hyperref)                removed on input line 978.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 978.
 
 
 
@@ -2358,7 +2358,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29]
 
-LaTeX Warning: Empty bibliography on input line 1104.
+LaTeX Warning: Empty bibliography on input line 1122.
 
 
 Package caption Warning: Unused \captionsetup[sub] on input line 57.
@@ -2378,10 +2378,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50693 strings out of 473197
- 1144472 string characters out of 5718605
+ 50731 strings out of 473197
+ 1145408 string characters out of 5718605
  2023272 words of memory out of 5000000
- 73036 multiletter control sequences out of 15000+600000
+ 73074 multiletter control sequences out of 15000+600000
  614791 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,99p,1867b,2140s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2393,7 +2393,7 @@ blic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share
 mr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (30 pages, 248926 bytes).
+Output written on main.pdf (30 pages, 249528 bytes).
 PDF statistics:
  642 PDF objects out of 1000 (max. 8388607)
  515 compressed objects within 6 object streams

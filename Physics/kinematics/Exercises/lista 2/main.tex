@@ -691,28 +691,46 @@ F = 6{,}67 \times 10^{-11}\,N
 Essa força é extremamente pequena, o que explica por que não percebemos atração gravitacional entre objetos do dia a dia.
 
 \begin{center}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1.2]
 
-    % Terra (círculo preenchido)
-    \filldraw[blue!60] (0,0) circle (1.5cm);
-    
-    % Contorno da Terra
-    \draw[thick] (0,0) circle (1.5cm);
-    
-    % Campo gravitacional (círculo pontilhado)
-    \draw[dashed, thick] (0,0) circle (3cm);
+% Raio da Terra
+\def\R{2}
+% Raio da órbita
+\def\orbit{3.5}
 
-    % Setas apontando para o centro (campo gravitacional)
-    \foreach \angle in {0,30,...,330} {
-        \draw[->, red] 
-        ({3*cos(\angle)}, {3*sin(\angle)}) -- ({1.5*cos(\angle)}, {1.5*sin(\angle)});
-    }
+% Terra
+\draw[fill=blue!30] (0,0) circle (\R);
 
-    % Rótulo Terra
-    \node at (0,0) {\textcolor{white}{Terra}};
-    
-    % Rótulo do campo
-    \node at (0,3.5) {Campo gravitacional};
+% Órbita (linha tracejada)
+\draw[dashed] (0,0) circle (\orbit);
+
+% Ponto A
+\coordinate (A) at (90:\orbit);
+\filldraw[orange] (A) circle (3pt) node[above] {A};
+
+% Ponto B
+\coordinate (B) at (210:\orbit);
+\filldraw[orange] (B) circle (3pt) node[left] {B};
+
+% Linha do centro até A
+\draw[dashed] (0,0) -- (A);
+
+% Linha do centro até B
+\draw[dashed] (0,0) -- (B);
+
+% Vetor raio R
+\draw[->, thick] (0,0) -- (240:\R) node[midway,left] {$R$};
+
+% Distância 2560 km
+\draw[<->] (\R,0) -- (\orbit,0);
+\node at (2.7,0.3) {2\,560 km};
+
+% Texto satélite
+\node at (1.2,2.8) {satélite};
+
+% Seta de movimento
+\draw[->] (-3.5,2.5) arc[start angle=150,end angle=120,radius=2];
+\node at (-4.2,3) {movimento};
 
 \end{tikzpicture}
 \end{center}
