@@ -16,47 +16,5 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}
-  \entry{feynman1964feynman}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=FRP}{%
-         family={Feynman},
-         familyi={F\bibinitperiod},
-         given={Richard\bibnamedelima P},
-         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=LRB}{%
-         family={Leighton},
-         familyi={L\bibinitperiod},
-         given={Robert\bibnamedelima B},
-         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sands},
-         familyi={S\bibinitperiod},
-         given={Matthew},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=TS}{%
-         family={Treiman},
-         familyi={T\bibinitperiod},
-         given={SB},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {AIP Publishing}%
-    }
-    \strng{namehash}{FRP+1}
-    \strng{fullhash}{FRPLRBSMTS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{8}
-    \field{pages}{45\bibrangedash 46}
-    \field{title}{The Feynman Lectures on Physics}
-    \field{volume}{17}
-    \field{journaltitle}{Physics Today}
-    \field{year}{1964}
-  \endentry
-\enddatalist
+\datalist[entry]{none/global//global/global/global}\enddatalist
 \endinput

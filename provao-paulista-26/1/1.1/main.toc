@@ -3,8 +3,7 @@
 \contentsline {section}{\numberline {2}Distância e deslocamento}{4}{section.2}%
 \contentsline {section}{\numberline {3}Velocidade vetorial média}{7}{section.3}%
 \contentsline {section}{\numberline {4}Velocidade instantânea}{9}{section.4}%
-\contentsline {section}{\numberline {5}Aceleração média}{11}{section.5}%
+\contentsline {section}{\numberline {5}Aceleração média}{10}{section.5}%
 \contentsline {section}{\numberline {6}Aceleração instantânea}{13}{section.6}%
 \contentsline {section}{\numberline {7}Mapa mental da Cinemática}{15}{section.7}%
 \contentsline {section}{\numberline {8}Fórmulas fundamentais}{16}{section.8}%
-\contentsline {section}{Referências}{17}{section.8}%
