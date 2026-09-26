@@ -1,0 +1,12 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}Cinemática}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Representação gráfica do movimento}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Gráfico da posição em função do tempo}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Exemplo: posição em função do tempo}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Gráfico da velocidade em função do tempo}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Gráfico da aceleração em função do tempo}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Relação entre os três gráficos}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Movimento uniforme}{6}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Movimento uniformemente variado}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Atenção à interpretação dos gráficos}{8}{subsection.1.9}%
+\contentsline {section}{\numberline {2}Síntese}{8}{section.2}%

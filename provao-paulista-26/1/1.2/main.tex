@@ -1,0 +1,515 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\input{commands.tex}
+
+% --------------------------------------------------
+% CORES E CAIXAS
+% --------------------------------------------------
+
+\definecolor{azul}{RGB}{30,90,150}
+\definecolor{cinza}{RGB}{245,245,245}
+\definecolor{verde}{RGB}{230,245,235}
+\definecolor{amarelo}{RGB}{255,248,220}
+
+\newtcolorbox{ideia}{
+    colback=azul!5,
+    colframe=azul,
+    title=\textbf{IDEIA-CHAVE},
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{exemplo}{
+    colback=verde,
+    colframe=green!50!black,
+    title=\textbf{EXEMPLO},
+    fonttitle=\bfseries
+}
+
+\newtcolorbox{atencao}{
+    colback=amarelo,
+    colframe=orange!80!black,
+    title=\textbf{ATENÇÃO},
+    fonttitle=\bfseries
+}
+
+% --------------------------------------------------
+% CABEÇALHO
+% --------------------------------------------------
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead[R]{\thepage}
+
+% --------------------------------------------------
+% HYPERREF
+% --------------------------------------------------
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% --------------------------------------------------
+% BIBLIOGRAFIA
+% --------------------------------------------------
+
+\addbibresource{bibliography.bib}
+
+\newcommand{\printingbibliography}{%
+    \pagestyle{myheadings}
+    \markright{}
+    \sloppy
+    \printbibliography[
+        heading=bibintoc,
+        title=Referências
+    ]
+    \fussy
+}
+
+% --------------------------------------------------
+% CONFIGURAÇÕES
+% --------------------------------------------------
+
+\renewcommand{\baselinestretch}{1.5}
+
+\geometry{
+    a4paper,
+    top=30mm,
+    bottom=20mm,
+    left=30mm,
+    right=20mm
+}
+
+\titleformat*{\section}{\bfseries\large}
+\titleformat*{\subsection}{\bfseries\normalsize}
+
+\title{
+    \textbf{\large
+    PROVÃO PAULISTA SERIADO -- 1ª, 2ª E 3ª SÉRIES DO ENSINO MÉDIO}
+}
+
+\author{
+    André V. Silva \\
+    \href{https://andrevsilva.com/}{andrevsilva.com}
+}
+
+\date{\today}
+
+% ==================================================
+% DOCUMENTO
+% ==================================================
+
+\begin{document}
+
+\maketitle
+
+% ==================================================
+% CINEMÁTICA
+% ==================================================
+
+\tableofcontents
+
+\section{Cinemática}
+
+A Cinemática é a parte da Física que descreve os movimentos dos corpos,
+analisando grandezas como posição, deslocamento, velocidade e aceleração,
+sem se preocupar inicialmente com as causas do movimento.
+
+% --------------------------------------------------
+\subsection{Representação gráfica do movimento}
+
+Uma maneira muito importante de estudar o movimento de um corpo é utilizar
+gráficos que relacionam as grandezas físicas com o tempo.
+
+Os principais gráficos utilizados na Cinemática são:
+
+\begin{itemize}
+    \item posição (ou espaço) em função do tempo: $s \times t$;
+    \item velocidade escalar em função do tempo: $v \times t$;
+    \item aceleração escalar em função do tempo: $a \times t$.
+\end{itemize}
+
+\begin{ideia}
+
+Os gráficos permitem visualizar como o movimento de um corpo acontece ao
+longo do tempo.
+
+A posição informa \textbf{onde o corpo está}; a velocidade informa
+\textbf{como a posição está mudando}; e a aceleração informa
+\textbf{como a velocidade está mudando}.
+
+Podemos representar essa relação da seguinte maneira:
+
+\[
+\boxed{
+\text{posição}
+\longrightarrow
+\text{velocidade}
+\longrightarrow
+\text{aceleração}
+}
+\]
+
+\end{ideia}
+
+% --------------------------------------------------
+\subsection{Gráfico da posição em função do tempo}
+
+O gráfico da posição em função do tempo representa a posição do corpo para
+cada instante considerado.
+
+No eixo horizontal representamos o tempo $t$ e no eixo vertical representamos
+a posição $s$.
+
+\[
+s = f(t)
+\]
+
+A inclinação da curva fornece informações sobre a velocidade do corpo.
+
+\begin{ideia}
+
+No gráfico $s \times t$:
+
+\begin{itemize}
+    \item reta horizontal $\rightarrow$ posição constante;
+    \item reta inclinada para cima $\rightarrow$ posição aumentando;
+    \item reta inclinada para baixo $\rightarrow$ posição diminuindo;
+    \item maior inclinação $\rightarrow$ maior módulo da velocidade.
+\end{itemize}
+
+A velocidade instantânea está relacionada à inclinação da curva:
+
+\[
+v = \frac{ds}{dt}
+\]
+
+\end{ideia}
+
+% --------------------------------------------------
+\subsection{Exemplo: posição em função do tempo}
+
+Considere um corpo cuja posição varia segundo:
+
+\[
+s(t)=10+5t
+\]
+
+onde $s$ é medida em metros e $t$ em segundos.
+
+Comparando essa expressão com a equação do movimento uniforme,
+
+\[
+s=s_0+vt,
+\]
+
+identificamos:
+
+\[
+s_0=10\,\text{m}
+\]
+
+e
+
+\[
+v=5\,\text{m/s}.
+\]
+
+Portanto, o corpo possui velocidade constante de $5\,\text{m/s}$.
+
+\begin{exemplo}
+
+Para $t=0$:
+
+\[
+s(0)=10\,\text{m}.
+\]
+
+Para $t=2\,\text{s}$:
+
+\[
+s(2)=10+5(2)=20\,\text{m}.
+\]
+
+Para $t=4\,\text{s}$:
+
+\[
+s(4)=10+5(4)=30\,\text{m}.
+\]
+
+Assim, a posição aumenta linearmente com o tempo.
+
+\end{exemplo}
+
+% --------------------------------------------------
+\subsection{Gráfico da velocidade em função do tempo}
+
+O gráfico da velocidade em função do tempo representa como a velocidade
+do corpo varia durante o movimento.
+
+No eixo horizontal representamos o tempo $t$ e no eixo vertical a velocidade
+$v$.
+
+\[
+v=f(t)
+\]
+
+\begin{ideia}
+
+No gráfico $v \times t$:
+
+\begin{itemize}
+    \item linha horizontal $\rightarrow$ velocidade constante;
+    \item velocidade aumentando $\rightarrow$ movimento acelerado;
+    \item velocidade diminuindo $\rightarrow$ movimento retardado;
+    \item inclinação da curva $\rightarrow$ aceleração.
+\end{itemize}
+
+A aceleração instantânea é dada por:
+
+\[
+a=\frac{dv}{dt}.
+\]
+
+Além disso, a área sob o gráfico $v\times t$ representa o deslocamento
+escalar:
+
+\[
+\boxed{\Delta s=\text{área sob o gráfico }v\times t}
+\]
+
+\end{ideia}
+
+% --------------------------------------------------
+\subsection{Gráfico da aceleração em função do tempo}
+
+O gráfico da aceleração em função do tempo mostra como a aceleração varia
+durante o movimento.
+
+No eixo horizontal representamos o tempo $t$ e no eixo vertical a aceleração
+$a$.
+
+\[
+a=f(t)
+\]
+
+\begin{ideia}
+
+Quando a aceleração é constante, o gráfico $a\times t$ é uma reta horizontal.
+
+Além disso, a área sob o gráfico da aceleração em função do tempo representa
+a variação da velocidade:
+
+\[
+\boxed{
+\Delta v=\text{área sob o gráfico }a\times t
+}
+\]
+
+Portanto:
+
+\[
+v_f=v_i+\Delta v.
+\]
+
+\end{ideia}
+
+% --------------------------------------------------
+\subsection{Relação entre os três gráficos}
+
+Os três gráficos estão diretamente relacionados.
+
+\[
+\boxed{
+s(t)
+\overset{\text{derivada}}{\longrightarrow}
+v(t)
+\overset{\text{derivada}}{\longrightarrow}
+a(t)
+}
+\]
+
+Também podemos fazer o caminho inverso utilizando áreas:
+
+\[
+\boxed{
+a(t)
+\overset{\text{área}}{\longrightarrow}
+v(t)
+\overset{\text{área}}{\longrightarrow}
+s(t)
+}
+\]
+
+Assim:
+
+\begin{center}
+\begin{tabular}{c|c}
+\textbf{Gráfico} & \textbf{Informação obtida} \\ \hline
+$s\times t$ & A inclinação fornece a velocidade \\[2mm]
+$v\times t$ & A inclinação fornece a aceleração \\[2mm]
+$v\times t$ & A área fornece o deslocamento \\[2mm]
+$a\times t$ & A área fornece a variação da velocidade
+\end{tabular}
+\end{center}
+
+% --------------------------------------------------
+\subsection{Movimento uniforme}
+
+No movimento uniforme, a velocidade permanece constante.
+
+Assim:
+
+\[
+v=\text{constante}
+\]
+
+e
+
+\[
+a=0.
+\]
+
+A função horária da posição é:
+
+\[
+s=s_0+vt.
+\]
+
+Portanto:
+
+\begin{itemize}
+    \item o gráfico $s\times t$ é uma reta;
+    \item o gráfico $v\times t$ é uma reta horizontal;
+    \item o gráfico $a\times t$ coincide com o eixo do tempo.
+\end{itemize}
+
+% --------------------------------------------------
+\subsection{Movimento uniformemente variado}
+
+No movimento uniformemente variado, a aceleração permanece constante:
+
+\[
+a=\text{constante}.
+\]
+
+A velocidade varia linearmente com o tempo:
+
+\[
+v=v_0+at.
+\]
+
+A posição é dada por:
+
+\[
+s=s_0+v_0t+\frac{1}{2}at^2.
+\]
+
+Consequentemente:
+
+\begin{itemize}
+    \item o gráfico $s\times t$ é uma parábola;
+    \item o gráfico $v\times t$ é uma reta inclinada;
+    \item o gráfico $a\times t$ é uma reta horizontal.
+\end{itemize}
+
+% --------------------------------------------------
+\subsection{Atenção à interpretação dos gráficos}
+
+\begin{atencao}
+
+Um gráfico de posição, velocidade ou aceleração \textbf{não representa
+necessariamente a trajetória do corpo}.
+
+Por exemplo, um gráfico $s\times t$ mostra como a posição varia com o tempo.
+Ele não mostra o caminho geométrico percorrido pelo corpo no espaço.
+
+Da mesma forma, um gráfico $v\times t$ não representa a trajetória do objeto:
+ele representa a variação da velocidade ao longo do tempo.
+
+\end{atencao}
+
+% ==================================================
+% SÍNTESE
+% ==================================================
+
+\section{Síntese}
+
+A interpretação dos gráficos da Cinemática pode ser resumida da seguinte
+forma:
+
+\[
+\boxed{
+\begin{array}{c}
+s(t) \\
+\downarrow\ \text{inclinação}\\
+v(t) \\
+\downarrow\ \text{inclinação}\\
+a(t)
+\end{array}
+}
+\]
+
+E, no sentido inverso:
+
+\[
+\boxed{
+a(t)
+\xrightarrow{\text{área}}
+v(t)
+\xrightarrow{\text{área}}
+s(t)
+}
+\]
+
+\begin{ideia}
+
+A ideia fundamental é:
+
+\[
+\boxed{
+\text{posição}
+\rightarrow
+\text{velocidade}
+\rightarrow
+\text{aceleração}
+}
+\]
+
+A posição descreve onde o corpo está.
+
+A velocidade descreve como sua posição muda.
+
+A aceleração descreve como sua velocidade muda.
+
+\end{ideia}
+
+% ==================================================
+% BIBLIOGRAFIA
+% ==================================================
+
+\printingbibliography
+
+\end{document}

@@ -1,0 +1,768 @@
+\documentclass[a4paper,12pt]{article}
+
+% ==================================================
+% PACOTES BÁSICOS
+% ==================================================
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+% Matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Tabelas
+\usepackage{array}
+\usepackage{booktabs}
+
+% Bibliografia
+\usepackage[
+    backend=biber,
+    style=abnt
+]{biblatex}
+
+% Comandos personalizados
+\input{commands.tex}
+
+% ==================================================
+% CORES
+% ==================================================
+
+\definecolor{azul}{RGB}{30,90,150}
+\definecolor{cinza}{RGB}{245,245,245}
+\definecolor{verde}{RGB}{230,245,235}
+\definecolor{amarelo}{RGB}{255,248,220}
+
+% ==================================================
+% CAIXAS
+% ==================================================
+
+% --------------------------------------------------
+% IDEIA-CHAVE
+% --------------------------------------------------
+
+\newtcolorbox{ideia}{
+    colback=azul!5,
+    colframe=azul,
+    title=\textbf{IDEIA-CHAVE},
+    fonttitle=\bfseries,
+    breakable
+}
+
+% --------------------------------------------------
+% EXEMPLO
+% --------------------------------------------------
+
+\newtcolorbox{exemplo}{
+    colback=verde,
+    colframe=green!50!black,
+    title=\textbf{EXEMPLO},
+    fonttitle=\bfseries,
+    breakable
+}
+
+% --------------------------------------------------
+% ATENÇÃO
+% --------------------------------------------------
+
+\newtcolorbox{atencao}{
+    colback=amarelo,
+    colframe=orange!80!black,
+    title=\textbf{ATENÇÃO},
+    fonttitle=\bfseries,
+    breakable
+}
+
+% ==================================================
+% CABEÇALHO
+% ==================================================
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead[R]{\thepage}
+
+% ==================================================
+% HYPERREF
+% ==================================================
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Provão Paulista Seriado -- Cinemática},
+    pdfauthor={André V. Silva}
+}
+
+% ==================================================
+% BIBLIOGRAFIA
+% ==================================================
+
+\addbibresource{bibliography.bib}
+
+\newcommand{\printingbibliography}{%
+    \pagestyle{myheadings}
+    \markright{}
+    \sloppy
+
+    \printbibliography[
+        heading=bibintoc,
+        title={Referências}
+    ]
+
+    \fussy
+}
+
+% ==================================================
+% CONFIGURAÇÕES DE PÁGINA
+% ==================================================
+
+\renewcommand{\baselinestretch}{1.5}
+
+\geometry{
+    a4paper,
+    top=30mm,
+    bottom=20mm,
+    left=30mm,
+    right=20mm
+}
+
+% ==================================================
+% FORMATAÇÃO DOS TÍTULOS
+% ==================================================
+
+\titleformat{\section}
+    {\bfseries\large}
+    {\thesection}
+    {1em}
+    {}
+
+\titleformat{\subsection}
+    {\bfseries\normalsize}
+    {\thesubsection}
+    {1em}
+    {}
+
+% ==================================================
+% TÍTULO
+% ==================================================
+
+\title{
+    \textbf{\large
+    PROVÃO PAULISTA SERIADO --\\
+    1ª, 2ª E 3ª SÉRIES DO ENSINO MÉDIO}
+}
+
+\author{
+    André V. Silva \\[4pt]
+    \href{https://andrevsilva.com/}{andrevsilva.com}
+}
+
+\date{\today}
+
+% ==================================================
+% DOCUMENTO
+% ==================================================
+
+\begin{document}
+
+\maketitle
+
+% ==================================================
+% SUMÁRIO
+% ==================================================
+
+\tableofcontents
+
+\newpage
+
+% ==================================================
+% CINEMÁTICA
+% ==================================================
+
+\section{Cinemática}
+
+A Cinemática é a parte da Física que descreve os movimentos dos corpos,
+analisando grandezas como posição, deslocamento, velocidade e aceleração,
+sem investigar as causas responsáveis pelo movimento.
+
+\begin{ideia}
+
+Para estudar um movimento, é importante identificar:
+
+\begin{itemize}
+
+    \item a posição do corpo;
+
+    \item o deslocamento realizado;
+
+    \item a velocidade;
+
+    \item a aceleração;
+
+    \item o intervalo de tempo considerado.
+
+\end{itemize}
+
+\end{ideia}
+
+% ==================================================
+\subsection{Movimento Uniforme}
+
+No \textbf{movimento uniforme (MU)}, o móvel apresenta velocidade
+constante e, portanto, sua aceleração é nula:
+
+\[
+\boxed{a=0}
+\]
+
+Como a velocidade permanece constante, o móvel percorre deslocamentos
+iguais em intervalos de tempo iguais.
+
+A função horária da posição é:
+
+\[
+\boxed{x=x_0+vt}
+\]
+
+em que:
+
+\begin{itemize}
+
+    \item \(x\) é a posição final;
+
+    \item \(x_0\) é a posição inicial;
+
+    \item \(v\) é a velocidade constante;
+
+    \item \(t\) é o tempo.
+
+\end{itemize}
+
+\begin{exemplo}
+
+Um automóvel está na posição \(20\,\mathrm{m}\) e movimenta-se com
+velocidade constante de \(10\,\mathrm{m/s}\).
+
+Sua posição após \(5\,\mathrm{s}\) será:
+
+\[
+x=x_0+vt
+\]
+
+\[
+x=20+10(5)
+\]
+
+\[
+\boxed{x=70\,\mathrm{m}}
+\]
+
+\end{exemplo}
+
+% ==================================================
+\subsection{Movimento Uniformemente Variado}
+
+No \textbf{movimento uniformemente variado (MUV)}, a aceleração é
+constante e diferente de zero.
+
+Isso significa que a velocidade varia de maneira uniforme ao longo
+do tempo.
+
+A função horária da velocidade é:
+
+\[
+\boxed{v=v_0+at}
+\]
+
+em que:
+
+\begin{itemize}
+
+    \item \(v\) é a velocidade no instante \(t\);
+
+    \item \(v_0\) é a velocidade inicial;
+
+    \item \(a\) é a aceleração constante;
+
+    \item \(t\) é o tempo.
+
+\end{itemize}
+
+A função horária da posição é:
+
+\[
+\boxed{x=x_0+v_0t+\frac{at^2}{2}}
+\]
+
+Essa equação permite determinar a posição do móvel em determinado
+instante.
+
+\begin{exemplo}
+
+Um móvel parte do repouso com aceleração constante de
+\(2\,\mathrm{m/s^2}\).
+
+Considerando \(x_0=0\), determine sua posição após \(4\,\mathrm{s}\).
+
+\[
+x=x_0+v_0t+\frac{at^2}{2}
+\]
+
+Como \(x_0=0\) e \(v_0=0\):
+
+\[
+x=\frac{2(4)^2}{2}
+\]
+
+\[
+\boxed{x=16\,\mathrm{m}}
+\]
+
+\end{exemplo}
+
+% ==================================================
+\subsection{Equação de Torricelli}
+
+Quando o tempo não é conhecido ou não é necessário determiná-lo,
+podemos utilizar a equação de Torricelli:
+
+\[
+\boxed{v^2=v_0^2+2a\Delta x}
+\]
+
+em que:
+
+\[
+\Delta x=x-x_0
+\]
+
+Essa equação relaciona diretamente velocidade, aceleração e
+deslocamento.
+
+\begin{atencao}
+
+A equação de Torricelli é especialmente útil em problemas de MUV
+nos quais o tempo não é fornecido.
+
+\end{atencao}
+
+% ==================================================
+\subsection{Queda Livre}
+
+A \textbf{queda livre} é um caso particular do movimento uniformemente
+variado no qual o corpo se movimenta sob a ação da gravidade,
+desprezando-se a resistência do ar.
+
+Próximo à superfície da Terra, podemos considerar:
+
+\[
+\boxed{g\approx9{,}8\,\mathrm{m/s^2}}
+\]
+
+Em muitos exercícios escolares, utiliza-se:
+
+\[
+\boxed{g\approx10\,\mathrm{m/s^2}}
+\]
+
+Quando o corpo é abandonado do repouso, temos:
+
+\[
+v_0=0
+\]
+
+Escolhendo o sentido para baixo como positivo:
+
+\[
+a=g
+\]
+
+Assim:
+
+\[
+\boxed{v=gt}
+\]
+
+e:
+
+\[
+\boxed{\Delta y=\frac{gt^2}{2}}
+\]
+
+A relação entre velocidade e deslocamento pode ser obtida pela
+equação de Torricelli:
+
+\[
+\boxed{v^2=2g\Delta y}
+\]
+
+\begin{exemplo}
+
+Uma pedra é abandonada do repouso de uma altura de \(20\,\mathrm{m}\).
+
+Considere \(g=10\,\mathrm{m/s^2}\) e despreze a resistência do ar.
+
+O tempo de queda pode ser determinado por:
+
+\[
+\Delta y=\frac{gt^2}{2}
+\]
+
+\[
+20=\frac{10t^2}{2}
+\]
+
+\[
+20=5t^2
+\]
+
+\[
+t^2=4
+\]
+
+\[
+\boxed{t=2\,\mathrm{s}}
+\]
+
+\end{exemplo}
+
+% ==================================================
+\subsection{Lançamento Vertical}
+
+No \textbf{lançamento vertical}, o corpo recebe uma velocidade inicial
+para cima ou para baixo e passa a sofrer a ação da gravidade.
+
+Considerando o sentido para cima como positivo:
+
+\[
+\boxed{a=-g}
+\]
+
+A função horária da velocidade é:
+
+\[
+\boxed{v=v_0-gt}
+\]
+
+A função horária da posição é:
+
+\[
+\boxed{
+y=y_0+v_0t-\frac{gt^2}{2}
+}
+\]
+
+A equação de Torricelli fica:
+
+\[
+\boxed{
+v^2=v_0^2-2g\Delta y
+}
+\]
+
+No ponto de altura máxima, a velocidade instantânea é nula:
+
+\[
+\boxed{v=0}
+\]
+
+Portanto, podemos determinar o tempo de subida por:
+
+\[
+0=v_0-gt
+\]
+
+\[
+\boxed{
+t_{\mathrm{subida}}=\frac{v_0}{g}
+}
+\]
+
+A altura máxima, em relação ao ponto de lançamento, pode ser obtida
+por:
+
+\[
+\boxed{
+h_{\mathrm{máx}}=\frac{v_0^2}{2g}
+}
+\]
+
+\begin{exemplo}
+
+Uma bola é lançada verticalmente para cima com velocidade inicial
+de \(20\,\mathrm{m/s}\).
+
+Considere \(g=10\,\mathrm{m/s^2}\).
+
+O tempo necessário para atingir a altura máxima é:
+
+\[
+t_{\mathrm{subida}}=\frac{v_0}{g}
+\]
+
+\[
+t_{\mathrm{subida}}=\frac{20}{10}
+\]
+
+\[
+\boxed{
+t_{\mathrm{subida}}=2\,\mathrm{s}
+}
+\]
+
+A altura máxima atingida será:
+
+\[
+h_{\mathrm{máx}}
+=
+\frac{20^2}{2(10)}
+\]
+
+\[
+\boxed{
+h_{\mathrm{máx}}=20\,\mathrm{m}
+}
+\]
+
+\end{exemplo}
+
+% ==================================================
+\subsection{Relação entre as Funções do Movimento}
+
+As principais funções utilizadas na Cinemática podem ser organizadas
+da seguinte maneira:
+
+\begin{center}
+
+\renewcommand{\arraystretch}{1.6}
+
+\begin{tabular}{|>{\centering\arraybackslash}m{4cm}|
+                >{\centering\arraybackslash}m{8cm}|}
+
+\hline
+
+\textbf{Movimento} &
+\textbf{Equação} \\
+
+\hline
+
+Movimento Uniforme &
+\(x=x_0+vt\) \\
+
+\hline
+
+MUV -- velocidade &
+\(v=v_0+at\) \\
+
+\hline
+
+MUV -- posição &
+\(x=x_0+v_0t+\frac{at^2}{2}\) \\
+
+\hline
+
+Equação de Torricelli &
+\(v^2=v_0^2+2a\Delta x\) \\
+
+\hline
+
+Queda livre &
+\(v=gt\) \\
+
+\hline
+
+Queda livre &
+\(\Delta y=\frac{gt^2}{2}\) \\
+
+\hline
+
+Lançamento vertical &
+\(v=v_0-gt\) \\
+
+\hline
+
+Lançamento vertical &
+\(y=y_0+v_0t-\frac{gt^2}{2}\) \\
+
+\hline
+
+\end{tabular}
+
+\end{center}
+
+% ==================================================
+\subsection{Resumo Conceitual}
+
+\begin{ideia}
+
+\textbf{Movimento Uniforme (MU)}
+
+\[
+a=0
+\]
+
+\[
+v=\text{constante}
+\]
+
+\[
+x=x_0+vt
+\]
+
+\vspace{0.3cm}
+
+\textbf{Movimento Uniformemente Variado (MUV)}
+
+\[
+a=\text{constante}
+\]
+
+\[
+v=v_0+at
+\]
+
+\[
+x=x_0+v_0t+\frac{at^2}{2}
+\]
+
+\vspace{0.3cm}
+
+\textbf{Queda Livre}
+
+\[
+v_0=0
+\]
+
+\[
+a=g
+\]
+
+\[
+v=gt
+\]
+
+\[
+\Delta y=\frac{gt^2}{2}
+\]
+
+\vspace{0.3cm}
+
+\textbf{Lançamento Vertical para Cima}
+
+\[
+a=-g
+\]
+
+\[
+v=v_0-gt
+\]
+
+\[
+y=y_0+v_0t-\frac{gt^2}{2}
+\]
+
+No ponto mais alto:
+
+\[
+v=0
+\]
+
+\end{ideia}
+
+% ==================================================
+\subsection{Cuidados com os Sinais}
+
+\begin{atencao}
+
+O sinal da aceleração depende da orientação do eixo escolhido.
+
+No lançamento vertical, se o sentido positivo for escolhido para cima,
+a aceleração da gravidade será:
+
+\[
+a=-g
+\]
+
+Na queda livre, se o sentido positivo for escolhido para baixo:
+
+\[
+a=+g
+\]
+
+O mais importante é manter a mesma convenção de sinais durante toda
+a resolução do problema.
+
+\end{atencao}
+
+% ==================================================
+\subsection{Estratégia para Resolver Problemas}
+
+Em questões de Cinemática, uma estratégia eficiente é:
+
+\begin{enumerate}
+
+    \item Identificar o tipo de movimento.
+
+    \item Listar os dados fornecidos pelo problema.
+
+    \item Escolher o eixo e definir a convenção de sinais.
+
+    \item Identificar a grandeza que se deseja determinar.
+
+    \item Escolher a equação adequada.
+
+    \item Substituir os valores, mantendo as unidades consistentes.
+
+    \item Verificar se o resultado possui unidade e sentido físico
+    coerentes.
+
+\end{enumerate}
+
+\begin{atencao}
+
+Antes de utilizar uma equação, verifique se ela corresponde ao tipo
+de movimento estudado.
+
+Por exemplo:
+
+\begin{itemize}
+
+    \item velocidade constante $\rightarrow$ Movimento Uniforme;
+
+    \item aceleração constante $\rightarrow$ Movimento Uniformemente
+    Variado;
+
+    \item movimento vertical sob ação da gravidade $\rightarrow$
+    utilizar \(g\) como aceleração.
+
+\end{itemize}
+
+\end{atencao}
+
+% ==================================================
+% BIBLIOGRAFIA
+% ==================================================
+
+\printingbibliography
+
+% ==================================================
+% FIM DO DOCUMENTO
+% ==================================================
+
+\end{document}
