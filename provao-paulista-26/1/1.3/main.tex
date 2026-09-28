@@ -1,8 +1,8 @@
 \documentclass[a4paper,12pt]{article}
 
-% ==================================================
-% PACOTES BÁSICOS
-% ==================================================
+% ============================================================
+% PACOTES
+% ============================================================
 
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
@@ -21,38 +21,59 @@
 % Matemática
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{mathtools}
 
 % Tabelas
 \usepackage{array}
 \usepackage{booktabs}
 
-% Bibliografia
-\usepackage[
-    backend=biber,
-    style=abnt
-]{biblatex}
+% Listas
+\usepackage{enumitem}
 
-% Comandos personalizados
-\input{commands.tex}
+% Caixas
+\usepackage[most]{tcolorbox}
 
-% ==================================================
+% TikZ e gráficos
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.18}
+
+% ============================================================
+% CONFIGURAÇÃO DA PÁGINA
+% ============================================================
+
+\geometry{
+    a4paper,
+    top=30mm,
+    bottom=20mm,
+    left=25mm,
+    right=20mm
+}
+
+\setstretch{1.25}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% ============================================================
 % CORES
-% ==================================================
+% ============================================================
 
 \definecolor{azul}{RGB}{30,90,150}
 \definecolor{cinza}{RGB}{245,245,245}
 \definecolor{verde}{RGB}{230,245,235}
 \definecolor{amarelo}{RGB}{255,248,220}
+\definecolor{vermelho}{RGB}{190,50,50}
+\definecolor{laranja}{RGB}{230,150,40}
 
-% ==================================================
-% CAIXAS
-% ==================================================
-
-% --------------------------------------------------
-% IDEIA-CHAVE
-% --------------------------------------------------
+% ============================================================
+% CAIXA: IDEIA-CHAVE
+% ============================================================
 
 \newtcolorbox{ideia}{
+    enhanced,
     colback=azul!5,
     colframe=azul,
     title=\textbf{IDEIA-CHAVE},
@@ -60,11 +81,25 @@
     breakable
 }
 
-% --------------------------------------------------
-% EXEMPLO
-% --------------------------------------------------
+% ============================================================
+% CAIXA: FÓRMULA
+% ============================================================
+
+\newtcolorbox{formula}{
+    enhanced,
+    colback=verde,
+    colframe=green!50!black,
+    title=\textbf{FÓRMULA},
+    fonttitle=\bfseries,
+    breakable
+}
+
+% ============================================================
+% CAIXA: EXEMPLO
+% ============================================================
 
 \newtcolorbox{exemplo}{
+    enhanced,
     colback=verde,
     colframe=green!50!black,
     title=\textbf{EXEMPLO},
@@ -72,11 +107,12 @@
     breakable
 }
 
-% --------------------------------------------------
-% ATENÇÃO
-% --------------------------------------------------
+% ============================================================
+% CAIXA: ATENÇÃO
+% ============================================================
 
 \newtcolorbox{atencao}{
+    enhanced,
     colback=amarelo,
     colframe=orange!80!black,
     title=\textbf{ATENÇÃO},
@@ -84,11 +120,27 @@
     breakable
 }
 
-% ==================================================
+% ============================================================
+% CAIXA: RESUMO
+% ============================================================
+
+\newtcolorbox{resumo}{
+    enhanced,
+    colback=cinza,
+    colframe=azul,
+    title=\textbf{RESUMO},
+    fonttitle=\bfseries,
+    breakable
+}
+
+% ============================================================
 % CABEÇALHO
-% ==================================================
+% ============================================================
 
 \pagestyle{fancy}
+
+% Correção do warning do fancyhdr
+\setlength{\headheight}{15pt}
 
 \fancyhf{}
 
@@ -96,9 +148,9 @@
 
 \fancyhead[R]{\thepage}
 
-% ==================================================
+% ============================================================
 % HYPERREF
-% ==================================================
+% ============================================================
 
 \hypersetup{
     colorlinks=true,
@@ -109,42 +161,9 @@
     pdfauthor={André V. Silva}
 }
 
-% ==================================================
-% BIBLIOGRAFIA
-% ==================================================
-
-\addbibresource{bibliography.bib}
-
-\newcommand{\printingbibliography}{%
-    \pagestyle{myheadings}
-    \markright{}
-    \sloppy
-
-    \printbibliography[
-        heading=bibintoc,
-        title={Referências}
-    ]
-
-    \fussy
-}
-
-% ==================================================
-% CONFIGURAÇÕES DE PÁGINA
-% ==================================================
-
-\renewcommand{\baselinestretch}{1.5}
-
-\geometry{
-    a4paper,
-    top=30mm,
-    bottom=20mm,
-    left=30mm,
-    right=20mm
-}
-
-% ==================================================
+% ============================================================
 % FORMATAÇÃO DOS TÍTULOS
-% ==================================================
+% ============================================================
 
 \titleformat{\section}
     {\bfseries\large}
@@ -158,42 +177,60 @@
     {1em}
     {}
 
-% ==================================================
+% ============================================================
 % TÍTULO
-% ==================================================
+% ============================================================
 
 \title{
     \textbf{\large
-    PROVÃO PAULISTA SERIADO --\\
+    PROVÃO PAULISTA SERIADO\\[4pt]
     1ª, 2ª E 3ª SÉRIES DO ENSINO MÉDIO}
 }
 
 \author{
-    André V. Silva \\[4pt]
+    André V. Silva\\[4pt]
     \href{https://andrevsilva.com/}{andrevsilva.com}
 }
 
 \date{\today}
 
-% ==================================================
-% DOCUMENTO
-% ==================================================
+% ============================================================
+% INÍCIO DO DOCUMENTO
+% ============================================================
 
 \begin{document}
 
+% ============================================================
+% CAPA
+% ============================================================
+
 \maketitle
 
-% ==================================================
+\begin{center}
+
+\vspace{1cm}
+
+{\Large\textbf{CINEMÁTICA}}
+
+\vspace{0.5cm}
+
+{\large Movimentos, gráficos e funções horárias}
+
+\vspace{1cm}
+
+\end{center}
+
+% ============================================================
 % SUMÁRIO
-% ==================================================
+% ============================================================
 
 \tableofcontents
 
 \newpage
 
-% ==================================================
-% CINEMÁTICA
-% ==================================================
+% ============================================================
+% 1. CINEMÁTICA
+% ============================================================
 
 \section{Cinemática}
 
@@ -221,10 +258,13 @@ Para estudar um movimento, é importante identificar:
 
 \end{ideia}
 
-% ==================================================
-\subsection{Movimento Uniforme}
+% ============================================================
+% 2. MOVIMENTO UNIFORME
+% ============================================================
 
-No \textbf{movimento uniforme (MU)}, o móvel apresenta velocidade
+\section{Movimento Uniforme}
+
+No \textbf{Movimento Uniforme (MU)}, o móvel apresenta velocidade
 constante e, portanto, sua aceleração é nula:
 
 \[
@@ -236,11 +276,15 @@ iguais em intervalos de tempo iguais.
 
 A função horária da posição é:
 
+\begin{formula}
+
 \[
 \boxed{x=x_0+vt}
 \]
 
-em que:
+\end{formula}
+
+onde:
 
 \begin{itemize}
 
@@ -253,6 +297,10 @@ em que:
     \item \(t\) é o tempo.
 
 \end{itemize}
+
+% ============================================================
+% EXEMPLO MU
+% ============================================================
 
 \begin{exemplo}
 
@@ -275,10 +323,61 @@ x=20+10(5)
 
 \end{exemplo}
 
-% ==================================================
-\subsection{Movimento Uniformemente Variado}
+% ============================================================
+% GRÁFICO MU
+% ============================================================
 
-No \textbf{movimento uniformemente variado (MUV)}, a aceleração é
+\subsection{Gráfico posição $\times$ tempo}
+
+No Movimento Uniforme, o gráfico da posição em função do tempo é uma reta.
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$x$ (m)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=10,
+    ymin=0,
+    ymax=25,
+    grid=both,
+    axis lines=left,
+    title={Posição em função do tempo -- MU}
+]
+
+\addplot[
+    domain=0:10,
+    samples=100,
+    thick
+]{2*x+2};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+A inclinação da reta representa a velocidade:
+
+\[
+v=\frac{\Delta x}{\Delta t}.
+\]
+
+% ============================================================
+% 3. MOVIMENTO UNIFORMEMENTE VARIADO
+% ============================================================
+
+\section{Movimento Uniformemente Variado}
+
+No \textbf{Movimento Uniformemente Variado (MUV)}, a aceleração é
 constante e diferente de zero.
 
 Isso significa que a velocidade varia de maneira uniforme ao longo
@@ -286,11 +385,15 @@ do tempo.
 
 A função horária da velocidade é:
 
+\begin{formula}
+
 \[
 \boxed{v=v_0+at}
 \]
 
-em que:
+\end{formula}
+
+onde:
 
 \begin{itemize}
 
@@ -306,12 +409,19 @@ em que:
 
 A função horária da posição é:
 
+\begin{formula}
+
 \[
-\boxed{x=x_0+v_0t+\frac{at^2}{2}}
+\boxed{
+x=x_0+v_0t+\frac{at^2}{2}
+}
 \]
 
-Essa equação permite determinar a posição do móvel em determinado
-instante.
+\end{formula}
+
+% ============================================================
+% EXEMPLO MUV
+% ============================================================
 
 \begin{exemplo}
 
@@ -324,11 +434,25 @@ Considerando \(x_0=0\), determine sua posição após \(4\,\mathrm{s}\).
 x=x_0+v_0t+\frac{at^2}{2}
 \]
 
-Como \(x_0=0\) e \(v_0=0\):
+Como:
+
+\[
+x_0=0
+\]
+
+e
+
+\[
+v_0=0,
+\]
+
+temos:
 
 \[
 x=\frac{2(4)^2}{2}
 \]
+
+Portanto:
 
 \[
 \boxed{x=16\,\mathrm{m}}
@@ -336,20 +460,120 @@ x=\frac{2(4)^2}{2}
 
 \end{exemplo}
 
-% ==================================================
-\subsection{Equação de Torricelli}
+% ============================================================
+% GRÁFICO VELOCIDADE x TEMPO
+% ============================================================
+
+\subsection{Gráfico velocidade $\times$ tempo}
+
+No MUV, o gráfico \(v\times t\) é uma reta.
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$v$ (m/s)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=10,
+    ymin=0,
+    ymax=25,
+    grid=both,
+    axis lines=left,
+    title={Velocidade em função do tempo -- MUV}
+]
+
+\addplot[
+    domain=0:10,
+    samples=100,
+    thick
+]{2*x+2};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+A inclinação da reta corresponde à aceleração:
+
+\[
+a=\frac{\Delta v}{\Delta t}.
+\]
+
+% ============================================================
+% GRÁFICO POSIÇÃO x TEMPO
+% ============================================================
+
+\subsection{Gráfico posição $\times$ tempo}
+
+Como existe aceleração constante, o gráfico da posição em função do
+tempo é uma parábola.
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$x$ (m)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=10,
+    ymin=0,
+    ymax=35,
+    grid=both,
+    axis lines=left,
+    title={Posição em função do tempo -- MUV}
+]
+
+\addplot[
+    domain=0:10,
+    samples=100,
+    thick
+]{0.25*x^2+2*x+2};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+% ============================================================
+% 4. EQUAÇÃO DE TORRICELLI
+% ============================================================
+
+\section{Equação de Torricelli}
 
 Quando o tempo não é conhecido ou não é necessário determiná-lo,
 podemos utilizar a equação de Torricelli:
 
+\begin{formula}
+
 \[
-\boxed{v^2=v_0^2+2a\Delta x}
+\boxed{
+v^2=v_0^2+2a\Delta x
+}
 \]
 
-em que:
+\end{formula}
+
+onde:
 
 \[
-\Delta x=x-x_0
+\Delta x=x-x_0.
 \]
 
 Essa equação relaciona diretamente velocidade, aceleração e
@@ -362,8 +586,11 @@ nos quais o tempo não é fornecido.
 
 \end{atencao}
 
-% ==================================================
-\subsection{Queda Livre}
+% ============================================================
+% 5. QUEDA LIVRE
+% ============================================================
+
+\section{Queda Livre}
 
 A \textbf{queda livre} é um caso particular do movimento uniformemente
 variado no qual o corpo se movimenta sob a ação da gravidade,
@@ -372,51 +599,79 @@ desprezando-se a resistência do ar.
 Próximo à superfície da Terra, podemos considerar:
 
 \[
-\boxed{g\approx9{,}8\,\mathrm{m/s^2}}
+\boxed{
+g\approx9{,}8\,\mathrm{m/s^2}
+}
 \]
 
 Em muitos exercícios escolares, utiliza-se:
 
 \[
-\boxed{g\approx10\,\mathrm{m/s^2}}
+\boxed{
+g\approx10\,\mathrm{m/s^2}
+}
 \]
 
-Quando o corpo é abandonado do repouso, temos:
+Quando o corpo é abandonado do repouso:
 
 \[
-v_0=0
+v_0=0.
 \]
 
 Escolhendo o sentido para baixo como positivo:
 
 \[
-a=g
+a=g.
 \]
 
-Assim:
+A velocidade é:
+
+\begin{formula}
 
 \[
 \boxed{v=gt}
 \]
 
-e:
+\end{formula}
+
+O deslocamento vertical é:
+
+\begin{formula}
 
 \[
-\boxed{\Delta y=\frac{gt^2}{2}}
+\boxed{
+\Delta y=\frac{gt^2}{2}
+}
 \]
 
-A relação entre velocidade e deslocamento pode ser obtida pela
-equação de Torricelli:
+\end{formula}
+
+A relação entre velocidade e deslocamento é:
+
+\begin{formula}
 
 \[
-\boxed{v^2=2g\Delta y}
+\boxed{
+v^2=2g\Delta y
+}
 \]
+
+\end{formula}
+
+% ============================================================
+% EXEMPLO QUEDA LIVRE
+% ============================================================
 
 \begin{exemplo}
 
-Uma pedra é abandonada do repouso de uma altura de \(20\,\mathrm{m}\).
+Uma pedra é abandonada do repouso de uma altura de
+\(20\,\mathrm{m}\).
 
-Considere \(g=10\,\mathrm{m/s^2}\) e despreze a resistência do ar.
+Considere:
+
+\[
+g=10\,\mathrm{m/s^2}.
+\]
 
 O tempo de queda pode ser determinado por:
 
@@ -436,31 +691,136 @@ O tempo de queda pode ser determinado por:
 t^2=4
 \]
 
+Logo:
+
 \[
 \boxed{t=2\,\mathrm{s}}
 \]
 
 \end{exemplo}
 
-% ==================================================
-\subsection{Lançamento Vertical}
+% ============================================================
+% GRÁFICO QUEDA LIVRE -- VELOCIDADE
+% ============================================================
+
+\subsection{Gráfico velocidade $\times$ tempo}
+
+Considerando:
+
+\[
+g=10\,\mathrm{m/s^2},
+\]
+
+temos:
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$v$ (m/s)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=5,
+    ymin=0,
+    ymax=55,
+    grid=both,
+    axis lines=left,
+    title={Velocidade na queda livre}
+]
+
+\addplot[
+    domain=0:5,
+    samples=100,
+    thick
+]{10*x};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+% ============================================================
+% GRÁFICO QUEDA LIVRE -- DESLOCAMENTO
+% ============================================================
+
+\subsection{Gráfico deslocamento $\times$ tempo}
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$\Delta y$ (m)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=5,
+    ymin=0,
+    ymax=130,
+    grid=both,
+    axis lines=left,
+    title={Deslocamento na queda livre}
+]
+
+\addplot[
+    domain=0:5,
+    samples=100,
+    thick
+]{5*x^2};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+% ============================================================
+% 6. LANÇAMENTO VERTICAL
+% ============================================================
+
+\section{Lançamento Vertical}
 
 No \textbf{lançamento vertical}, o corpo recebe uma velocidade inicial
 para cima ou para baixo e passa a sofrer a ação da gravidade.
 
 Considerando o sentido para cima como positivo:
 
+\begin{formula}
+
 \[
 \boxed{a=-g}
 \]
 
+\end{formula}
+
 A função horária da velocidade é:
 
+\begin{formula}
+
 \[
-\boxed{v=v_0-gt}
+\boxed{
+v=v_0-gt
+}
 \]
 
+\end{formula}
+
 A função horária da posição é:
+
+\begin{formula}
 
 \[
 \boxed{
@@ -468,7 +828,11 @@ y=y_0+v_0t-\frac{gt^2}{2}
 }
 \]
 
-A equação de Torricelli fica:
+\end{formula}
+
+A equação de Torricelli é:
+
+\begin{formula}
 
 \[
 \boxed{
@@ -476,17 +840,31 @@ v^2=v_0^2-2g\Delta y
 }
 \]
 
-No ponto de altura máxima, a velocidade instantânea é nula:
+\end{formula}
+
+No ponto de altura máxima:
+
+\begin{formula}
 
 \[
 \boxed{v=0}
 \]
 
-Portanto, podemos determinar o tempo de subida por:
+\end{formula}
+
+Portanto:
+
+\begin{formula}
 
 \[
 0=v_0-gt
 \]
+
+\end{formula}
+
+Assim:
+
+\begin{formula}
 
 \[
 \boxed{
@@ -494,8 +872,11 @@ t_{\mathrm{subida}}=\frac{v_0}{g}
 }
 \]
 
-A altura máxima, em relação ao ponto de lançamento, pode ser obtida
-por:
+\end{formula}
+
+A altura máxima é:
+
+\begin{formula}
 
 \[
 \boxed{
@@ -503,12 +884,22 @@ h_{\mathrm{máx}}=\frac{v_0^2}{2g}
 }
 \]
 
+\end{formula}
+
+% ============================================================
+% EXEMPLO LANÇAMENTO VERTICAL
+% ============================================================
+
 \begin{exemplo}
 
 Uma bola é lançada verticalmente para cima com velocidade inicial
 de \(20\,\mathrm{m/s}\).
 
-Considere \(g=10\,\mathrm{m/s^2}\).
+Considere:
+
+\[
+g=10\,\mathrm{m/s^2}.
+\]
 
 O tempo necessário para atingir a altura máxima é:
 
@@ -520,19 +911,35 @@ t_{\mathrm{subida}}=\frac{v_0}{g}
 t_{\mathrm{subida}}=\frac{20}{10}
 \]
 
+Portanto:
+
 \[
 \boxed{
 t_{\mathrm{subida}}=2\,\mathrm{s}
 }
 \]
 
-A altura máxima atingida será:
+A altura máxima será:
+
+\[
+h_{\mathrm{máx}}
+=
+\frac{v_0^2}{2g}
+\]
 
 \[
 h_{\mathrm{máx}}
 =
 \frac{20^2}{2(10)}
 \]
+
+\[
+h_{\mathrm{máx}}
+=
+\frac{400}{20}
+\]
+
+Logo:
 
 \[
 \boxed{
@@ -542,8 +949,113 @@ h_{\mathrm{máx}}=20\,\mathrm{m}
 
 \end{exemplo}
 
-% ==================================================
-\subsection{Relação entre as Funções do Movimento}
+% ============================================================
+% GRÁFICO LANÇAMENTO VERTICAL -- VELOCIDADE
+% ============================================================
+
+\subsection{Gráfico velocidade $\times$ tempo}
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$v$ (m/s)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=4,
+    ymin=-25,
+    ymax=25,
+    grid=both,
+    axis lines=left,
+    title={Velocidade no lançamento vertical}
+]
+
+\addplot[
+    domain=0:4,
+    samples=100,
+    thick
+]{20-10*x};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+O gráfico mostra que a velocidade diminui uniformemente até atingir
+zero no ponto mais alto.
+
+Depois disso, a velocidade torna-se negativa, indicando que o corpo
+está descendo.
+
+% ============================================================
+% GRÁFICO LANÇAMENTO VERTICAL -- POSIÇÃO
+% ============================================================
+
+\subsection{Gráfico posição $\times$ tempo}
+
+Considerando:
+
+\[
+y_0=0,
+\qquad
+v_0=20\,\mathrm{m/s},
+\qquad
+g=10\,\mathrm{m/s^2},
+\]
+
+temos:
+
+\[
+y=20t-5t^2.
+\]
+
+\begin{center}
+
+\begin{tikzpicture}
+
+\begin{axis}[
+    width=12cm,
+    height=7cm,
+    xlabel={$t$ (s)},
+    ylabel={$y$ (m)},
+    ylabel style={
+        at={(axis description cs:-0.09,0.5)},
+        anchor=south
+    },
+    xmin=0,
+    xmax=4,
+    ymin=0,
+    ymax=25,
+    grid=both,
+    axis lines=left,
+    title={Posição no lançamento vertical}
+]
+
+\addplot[
+    domain=0:4,
+    samples=100,
+    thick
+]{20*x-5*x^2};
+
+\end{axis}
+
+\end{tikzpicture}
+
+\end{center}
+
+% ============================================================
+% 7. RELAÇÃO ENTRE AS FUNÇÕES
+% ============================================================
+
+\section{Relação entre as Funções do Movimento}
 
 As principais funções utilizadas na Cinemática podem ser organizadas
 da seguinte maneira:
@@ -552,53 +1064,64 @@ da seguinte maneira:
 
 \renewcommand{\arraystretch}{1.6}
 
-\begin{tabular}{|>{\centering\arraybackslash}m{4cm}|
-                >{\centering\arraybackslash}m{8cm}|}
+\begin{tabular}{|
+>{\centering\arraybackslash}m{5cm}|
+>{\centering\arraybackslash}m{8cm}|
+}
 
 \hline
 
 \textbf{Movimento} &
-\textbf{Equação} \\
+\textbf{Equação}
+\\
 
 \hline
 
 Movimento Uniforme &
-\(x=x_0+vt\) \\
+\(x=x_0+vt\)
+\\
 
 \hline
 
 MUV -- velocidade &
-\(v=v_0+at\) \\
+\(v=v_0+at\)
+\\
 
 \hline
 
 MUV -- posição &
-\(x=x_0+v_0t+\frac{at^2}{2}\) \\
+\(x=x_0+v_0t+\frac{at^2}{2}\)
+\\
 
 \hline
 
 Equação de Torricelli &
-\(v^2=v_0^2+2a\Delta x\) \\
+\(v^2=v_0^2+2a\Delta x\)
+\\
 
 \hline
 
 Queda livre &
-\(v=gt\) \\
+\(v=gt\)
+\\
 
 \hline
 
 Queda livre &
-\(\Delta y=\frac{gt^2}{2}\) \\
+\(\Delta y=\frac{gt^2}{2}\)
+\\
 
 \hline
 
 Lançamento vertical &
-\(v=v_0-gt\) \\
+\(v=v_0-gt\)
+\\
 
 \hline
 
 Lançamento vertical &
-\(y=y_0+v_0t-\frac{gt^2}{2}\) \\
+\(y=y_0+v_0t-\frac{gt^2}{2}\)
+\\
 
 \hline
 
@@ -606,8 +1129,11 @@ Lançamento vertical &
 
 \end{center}
 
-% ==================================================
-\subsection{Resumo Conceitual}
+% ============================================================
+% 8. RESUMO CONCEITUAL
+% ============================================================
+
+\section{Resumo Conceitual}
 
 \begin{ideia}
 
@@ -685,8 +1211,11 @@ v=0
 
 \end{ideia}
 
-% ==================================================
-\subsection{Cuidados com os Sinais}
+% ============================================================
+% 9. CUIDADOS COM OS SINAIS
+% ============================================================
+
+\section{Cuidados com os Sinais}
 
 \begin{atencao}
 
@@ -696,13 +1225,13 @@ No lançamento vertical, se o sentido positivo for escolhido para cima,
 a aceleração da gravidade será:
 
 \[
-a=-g
+a=-g.
 \]
 
 Na queda livre, se o sentido positivo for escolhido para baixo:
 
 \[
-a=+g
+a=+g.
 \]
 
 O mais importante é manter a mesma convenção de sinais durante toda
@@ -710,8 +1239,11 @@ a resolução do problema.
 
 \end{atencao}
 
-% ==================================================
-\subsection{Estratégia para Resolver Problemas}
+% ============================================================
+% 10. ESTRATÉGIA PARA RESOLVER PROBLEMAS
+% ============================================================
+
+\section{Estratégia para Resolver Problemas}
 
 Em questões de Cinemática, uma estratégia eficiente é:
 
@@ -743,26 +1275,183 @@ Por exemplo:
 
 \begin{itemize}
 
-    \item velocidade constante $\rightarrow$ Movimento Uniforme;
+    \item velocidade constante
+    \(\rightarrow\) Movimento Uniforme;
 
-    \item aceleração constante $\rightarrow$ Movimento Uniformemente
-    Variado;
+    \item aceleração constante
+    \(\rightarrow\) Movimento Uniformemente Variado;
 
-    \item movimento vertical sob ação da gravidade $\rightarrow$
-    utilizar \(g\) como aceleração.
+    \item movimento vertical sob ação da gravidade
+    \(\rightarrow\) utilizar \(g\) como aceleração.
 
 \end{itemize}
 
 \end{atencao}
 
-% ==================================================
-% BIBLIOGRAFIA
-% ==================================================
+% ============================================================
+% 11. MAPA MENTAL DA CINEMÁTICA
+% ============================================================
 
-\printingbibliography
+\section{Mapa Mental da Cinemática}
 
-% ==================================================
+\begin{center}
+
+\begin{tikzpicture}[
+    every node/.style={
+        align=center,
+        font=\small
+    },
+    caixa/.style={
+        rectangle,
+        rounded corners,
+        draw=azul,
+        fill=azul!5,
+        minimum width=3.5cm,
+        minimum height=1cm
+    }
+]
+
+% ------------------------------------------------------------
+% NÓ CENTRAL
+% ------------------------------------------------------------
+
+\node[caixa] (cinematica)
+at (0,0)
+{\textbf{CINEMÁTICA}};
+
+% ------------------------------------------------------------
+% PRIMEIRO NÍVEL
+% ------------------------------------------------------------
+
+\node[caixa] (velocidade)
+at (-5,-2.5)
+{
+    Velocidade\\[2pt]
+    \(v=\dfrac{\Delta x}{\Delta t}\)
+};
+
+\node[caixa] (aceleracao)
+at (0,-2.5)
+{
+    Aceleração\\[2pt]
+    \(a=\dfrac{\Delta v}{\Delta t}\)
+};
+
+\node[caixa] (movimentos)
+at (5,-2.5)
+{
+    Movimentos
+};
+
+% ------------------------------------------------------------
+% SEGUNDO NÍVEL
+% ------------------------------------------------------------
+
+\node[caixa] (mu)
+at (3,-5)
+{
+    MU\\[2pt]
+    \(x=x_0+vt\)
+};
+
+\node[caixa] (muv)
+at (7,-5)
+{
+    MUV\\[2pt]
+    \(v=v_0+at\)
+};
+
+% ------------------------------------------------------------
+% TERCEIRO NÍVEL
+% ------------------------------------------------------------
+
+\node[caixa] (torricelli)
+at (7,-7.5)
+{
+    Torricelli\\[2pt]
+    \(v^2=v_0^2+2a\Delta x\)
+};
+
+% ------------------------------------------------------------
+% CONEXÕES
+% ------------------------------------------------------------
+
+\draw[->, thick]
+    (cinematica) -- (velocidade);
+
+\draw[->, thick]
+    (cinematica) -- (aceleracao);
+
+\draw[->, thick]
+    (cinematica) -- (movimentos);
+
+\draw[->, thick]
+    (movimentos) -- (mu);
+
+\draw[->, thick]
+    (movimentos) -- (muv);
+
+\draw[->, thick]
+    (muv) -- (torricelli);
+
+\end{tikzpicture}
+
+\end{center}
+
+% ============================================================
+% 12. CONCLUSÃO
+% ============================================================
+
+\section*{Conclusão}
+
+A Cinemática fornece ferramentas matemáticas para descrever os
+movimentos.
+
+Os principais conceitos são:
+
+\begin{itemize}
+
+    \item posição;
+
+    \item deslocamento;
+
+    \item velocidade;
+
+    \item aceleração;
+
+    \item Movimento Uniforme;
+
+    \item Movimento Uniformemente Variado;
+
+    \item queda livre;
+
+    \item lançamento vertical;
+
+    \item interpretação de gráficos.
+
+\end{itemize}
+
+\begin{resumo}
+
+\[
+\boxed{
+\text{Movimento}
+\rightarrow
+\text{posição}
+\rightarrow
+\text{velocidade}
+\rightarrow
+\text{aceleração}
+}
+\]
+
+A interpretação dos gráficos é tão importante quanto a utilização
+das equações.
+
+\end{resumo}
+
+% ============================================================
 % FIM DO DOCUMENTO
-% ==================================================
+% ============================================================
 
 \end{document}
